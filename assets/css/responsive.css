@@ -1,0 +1,657 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .menu-area nav ul li { 
+        margin-right: 5px;
+    }
+    .footer-contents { 
+        overflow: auto;
+    }
+    .footer-contents::-webkit-scrollbar{
+        height: 4px;
+    }
+    .week ul li {
+        margin-left: 8px;
+    }
+    .deadlines { 
+        min-width: 105px;
+        margin-right: 30px;
+    }
+    .inner-tab ul li a { 
+        margin-right: 10px; 
+    }
+
+    .all-cons {
+        overflow: auto;
+    }
+
+
+
+    .calendar.week-cal .cal-row-note {
+        min-width: 1200px;
+    }
+    
+    .calendar.week-cal .cal-row.btNone {
+        min-width: 1200px;
+    }
+    .calendar.days-cal .cal-row.btNone {
+        min-width: 100%;
+    }
+    
+    .calendar.days-cal .cal-row-note {
+        min-width: 100%;
+    }
+    .rright { 
+        min-width: 800px;
+    }
+
+    .parson_nav_cont_title_left{
+}
+.parson_name{
+    margin-left: -20px;
+}
+    .assing_parson_nav_tab{
+    padding-left: 30px;
+}
+.apnt_pro_price.active img.position{
+    right: 48px;
+}
+.apnt_pro_price.active:before{
+    left: 58px;
+}
+.apnt_pro_price.active.second:before{
+    left: 96px;
+}
+.apnt_pro_time button{
+    margin: 0 2px;
+    width: 35px;
+}
+.apnt_pro_time{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.apnt_pro_price.active img.position
+    .parson_name{
+    margin-left: 0;
+}
+.nav_cont_title_text{
+    margin-left: 5px;
+}
+.add_field_cont{
+    width: 210px;
+}
+.apnt_pro_name_text{
+    width: 150px;
+}
+.go_to {
+    left: 62%;
+}
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .tab ul li a { 
+        width: 110px; 
+    }
+    .header_action ul li { 
+        margin-left: 20px; 
+    }
+    .menu-area nav ul li { 
+        margin-right: 0px;
+    }
+    .menu-blk h3 { 
+        font-size: 13px; 
+    }
+    .menu-blk span {
+        right: 0;
+    }
+    .blk-wrp p span {
+        position: unset;
+        left: 20px;
+        display: block;
+    }
+    .blk-imgs {
+        margin-right: 13px;  
+    }
+    .blk-wrp p.tags span svg {
+        width: 10px;
+        height: 10px;
+    }
+    .blk-wrp p.tags span {
+        margin-right: 0px; 
+        display: inline-block;
+    }
+    .blk { 
+        padding: 17px 17px 20px 10px; 
+    } 
+    .footer-contents { 
+        overflow: auto;
+    }
+    .footer-contents::-webkit-scrollbar{
+        height: 4px;
+    }
+    .week ul li {
+        margin-left: 8px;
+    }
+    .deadlines { 
+        min-width: 105px;
+        margin-right: 30px;
+    }
+    .cal-row { 
+        min-width: 1050px;
+    }
+    .cal-body::-webkit-scrollbar{
+        height: 5px;
+    }
+    .inner-tab ul li a { 
+        margin-right: 10px; 
+    } 
+    .calendar.week-cal .cal-row-note {
+        min-width: 1200px;
+    }
+    
+    .calendar.week-cal .cal-row.btNone {
+        min-width: 1200px;
+    }
+    .calendar.days-cal .cal-row.btNone {
+        min-width: 100%;
+    }
+    
+    .calendar.days-cal .cal-row-note {
+        min-width: 100%;
+    }
+    .rright { 
+        min-width: 800px;
+    }
+
+
+
+
+    .parson_name{
+        margin-left: 0;
+    }
+    .nav_cont_title_text{
+        margin-left: 5px;
+    }
+    .add_field_cont{
+        width: 210px;
+    }
+    .parson_nav_cont_title_left{width: 70%;}
+.assing_parson_nav_tab{
+    padding-left: 30px;
+}
+.apnt_pro_name span.three_dot{
+    margin-left: 10px;
+}
+
+
+.all-cons {
+    overflow: auto;
+}
+.go_to {
+    left: 62%;
+}
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .search {
+        max-width: 94%;
+        margin-bottom: 15px;
+    }   
+    .footer-contents { 
+        overflow: auto;
+    }
+    .footer-contents::-webkit-scrollbar{
+        height: 4px;
+    }
+    .week ul li {
+        margin-left: 8px;
+    }
+    .deadlines { 
+        min-width: 105px;
+        margin-right: 30px;
+    }
+    .blk-menus { 
+        padding-bottom: 0;
+    }
+    .menu-blk { 
+        margin-bottom: 15px;
+    }
+    .week ul {
+        display: flex;
+    }
+
+    .cal-row { 
+        min-width: 1050px;
+    }
+    .cal-body::-webkit-scrollbar{
+        height: 5px;
+    } 
+    .header_action ul li {
+        display: none;
+    }
+    
+    .header_action ul li.user {
+        display: block !important;
+    }
+    
+    .header_action .bar {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .header_action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .header_action > ul {
+        display: inline-block;
+    }
+
+    .inner-tab ul li a { 
+        margin-right: 10px; 
+    } 
+    .calendar.week-cal .cal-row-note {
+        min-width: 1200px;
+    } 
+    .calendar.week-cal .cal-row.btNone {
+        min-width: 1200px;
+    }
+    .calendar.days-cal .cal-row.btNone {
+        min-width: 100%;
+    }
+    
+    .calendar.days-cal .cal-row-note {
+        min-width: 100%;
+    }
+    .rright { 
+        min-width: 800px;
+    }
+
+
+
+    .datas table#example {
+        width: max-content !important;
+        overflow: auto;
+    }
+    
+    .th_icon {
+        width: max-content;
+    }
+
+    .all-cons {
+        overflow: auto;
+   }
+   
+   .ass_tb {
+       width: max-content;
+   }
+   
+   .c_prof {
+       width: max-content;
+   }
+   
+   p.Deadlines {
+       width: max-content;
+   }
+   
+   .Invoices_tb {
+       width: max-content;
+   }
+   
+   .Incomes_tb {
+       width: max-content;
+   }
+   
+   .icon_tb {
+       width: max-content;
+   }
+   
+   .icon_tb span {
+       right: -55px;
+   }
+   .go_to {
+    left: 66%;
+}
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .search {
+        max-width: 85%; 
+        margin-bottom: 10px;
+    }
+    .tab-area {
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+    .tab ul {
+    width: max-content;
+    margin: auto;
+    }
+    .tab ul li a { 
+        width: 100%; 
+    }  
+    .tab { 
+        margin-bottom: 10px;
+    }
+    .menu-blk { 
+        margin-bottom: 20px;
+    }
+    .menu-blk span { 
+        right: 0;
+        top: 0px;
+        font-size: 28px; 
+    }
+    .blk-wrp p span { 
+        left: 0;
+        display: block;
+    }
+    .blk-wrp p.tags span {
+        margin-right: 5px; 
+        display: inline-block;
+    }
+    .footer-contents { 
+        overflow: auto;
+    }
+    .footer-contents::-webkit-scrollbar{
+        height: 4px;
+    }
+    .deadlines { 
+        min-width: 105px;
+        margin-right: 30px;
+    }
+    .week ul {
+        display: flex;
+    }
+    .week ul li {
+        margin-left: 8px;
+    }
+    .menu-blk h3 { 
+        font-size: 15px; 
+    }
+    .menu-blk span {
+        right: -10px;
+        top: -2px;
+        font-size: 28px;
+    } 
+    .blk-menus { 
+        padding-bottom: 0;
+    }  
+    .header_action ul li {
+        display: none;
+    }
+    
+    .header_action ul li.user {
+        display: block !important;
+    }
+    
+    .header_action .bar {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .header_action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .header_action > ul {
+        display: inline-block;
+    }
+
+
+
+    .calendar .cal-left {
+        display: none;
+    }
+    
+    .calendar .cal-right {
+        display: none;
+    }
+    
+    .cal-row {
+        min-width: 1220px;
+    }
+    .cal-body::-webkit-scrollbar{
+        height: 5px;
+    }
+    button.calbar-btn { 
+        display: block;
+    }
+    .progr {
+        min-width: 500px;
+    }
+    
+
+    .inner-tab ul li a { 
+        margin-right: 10px; 
+    } 
+    .calendar.week-cal .cal-row-note {
+        min-width: 1200px;
+    } 
+    .calendar.week-cal .cal-row.btNone {
+        min-width: 1200px;
+    }
+    .calendar.days-cal .cal-row.btNone {
+        min-width: 100%;
+    }
+    
+    .calendar.days-cal .cal-row-note {
+        min-width: 100%;
+    }
+    .rright { 
+        min-width: 800px;
+    }
+
+.singel_assing_card h2 {
+    font-size: 13px;
+}
+
+
+/* Assignments_Cards End ================== */
+
+
+/* Admin profile Start ================== */
+.toggel_nav{
+    display: block;
+    margin-right: 10px;
+  }
+  .assing_singel_parson_left{
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 99;
+      max-width: 300px;
+      background: #fbfbfb;
+      padding: 20px;
+      margin-left: -500px;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+  .toggel_nav a {
+    font-size: 18px;
+}
+.assing_singel_parson_left.parson_left_nav.sw_hi {
+    margin-left: -15px;
+    box-shadow: 18px 17px 10px #00000005;
+    transition: .5s;
+    overflow-y: scroll;
+}
+.assing_singel_parson_left.parson_left_nav.sw_hi .toggel_nav a.nav_toggel {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    transition: .5s;
+}
+.parson_nav_cont_title_left {
+    width: 100%;
+    justify-content: start;
+}
+
+.parson_nav_cont_title_right {
+    display: none;
+}
+
+.assing_parson_nav_cont {
+    padding-right: 0;
+}
+
+.nav_cont_title_text h5 {
+    font-size: 12px;
+}
+
+.nav_cont_title_text p {
+    font-size: 9px;
+}
+
+.parson_nav_cont_title_left a img {
+    width: 15px;
+    margin-right: 10px;
+}
+.parson_nav_cont_title_left span{
+    margin-left: 10px;
+}
+.nav_cont_title_text p img {
+    width: 7px;
+}
+
+.assing_parson_nav_tab {
+    padding-left: 0px;
+}
+
+.assing_parson_nav_tab_pricing h6 {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.assing_parson_nav_tab_pricing p {
+    font-size: 9px;
+}
+
+.apnt_pro_name {
+    flex-wrap: wrap;
+}
+
+.apnt_pro_name_text {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.apnt_pro_name span.three_dot {
+    top: 0;
+}
+.add_field_cont {
+    width: 180px;
+}
+.basic_form_long_cont img {
+    display: none;
+}
+
+
+/* Admin profile End ================== */
+.datas table#example {
+    width: max-content !important;
+    overflow: auto;
+}
+
+.th_icon {
+    width: max-content;
+}
+
+.all-cons {
+     overflow: auto;
+}
+
+.ass_tb {
+    width: max-content;
+}
+
+.c_prof {
+    width: max-content;
+}
+
+p.Deadlines {
+    width: max-content;
+}
+
+.Invoices_tb {
+    width: max-content;
+}
+
+.Incomes_tb {
+    width: max-content;
+}
+
+.icon_tb {
+    width: max-content;
+}
+
+.icon_tb span {
+    right: -55px;
+}
+
+div#example_paginate {
+    margin-left: -140px;
+}
+.go_to {
+    display: none;
+}
+
+
+
+
+}  
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .container_ac{
+        width: 450px;
+        margin: auto;
+    }
+    .parson_nav_cont_title_left{
+    width: 285px;
+}
+.parson_nav_cont_title_right{
+    display: block;
+}
+.assing_parson_nav_cont{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.apnt_pro_name{
+padding-left: 20px;  
+padding-right: 20px;   
+/* justify-content: flex-end; */
+}
+.go_to {
+    display: block;
+}
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .apnt_pro_name_text{
+        width: max-content;
+    }
+}

@@ -1,0 +1,717 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site Title Here</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+        <!-- header-area START -->
+        <div class="header-area" id="header">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="col-lg-2 col-8">
+                        <div class="logo-area bar">
+                            <a href="#" class="menu bar-icon siteBar-btn mtn">  
+                                <span></span>  
+                                <!-- <i class="fal fa-bars"></i> -->
+                            </a>
+                            <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="menu-area">
+                            <nav>
+                                <ul id="nav">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="contact.html">Contacts</a></li> 
+                                    <li><a href="assignments.html">Assignments</a></li> 
+                                    <li><a class="active" href="todo.html">To-Do Board</a></li> 
+                                    <li><a href="calender.html">Calendar</a></li>    
+                                    <li><a href="resource.html">Resources</a></li>    
+                                    <li><a href="permissions">Permissions</a></li>    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4 text-right">
+                        <div class="header_action"> 
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                </svg>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                    <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li class="user">
+                                    <img src="assets/img/user.png" alt="">
+                                    <span><i class="fal fa-angle-down"></i></span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                          <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                        </svg> General Settings</a></li>
+                                        <li><a href="#"><svg id="money-check" xmlns="http://www.w3.org/2000/svg" width="13" height="9.1" viewBox="0 0 13 9.1">
+                                          <path id="Shape" d="M.65,9.1A.65.65,0,0,1,0,8.45V.325A.325.325,0,0,1,.325,0h12.35A.325.325,0,0,1,13,.325V8.45a.65.65,0,0,1-.65.65Z" fill="#fff"/>
+                                        </svg>  Invoice Settings</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Import</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Export</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                          <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                        </svg>  Support Requests</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10.285" viewBox="0 0 12 10.285">
+                                          <path id="Shape" d="M.321,10.285A.323.323,0,0,1,0,9.964V.321A.323.323,0,0,1,.321,0h.75a.323.323,0,0,1,.322.321V9.964a.323.323,0,0,1-.322.321Zm7.154-.951-.525-.525a.318.318,0,0,1,.005-.458l2.6-2.509H2.893a.323.323,0,0,1-.321-.321V4.77a.323.323,0,0,1,.321-.321H9.556L6.956,1.94a.322.322,0,0,1-.005-.458L7.475.956A.318.318,0,0,1,7.931.95l3.974,3.965a.322.322,0,0,1,0,.455L7.931,9.334a.322.322,0,0,1-.455,0Z" fill="#fff"/>
+                                        </svg>  Logout</a></li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                            <div class="bar">
+                                <a class="bar-icon mmenus siteBar-btn" href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+            <!-- mobile-menu START -->
+            <div class="mobile-menu left-menu">
+                <div class="top-bars">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="javascript:void(0)" class="bars siteBar-btn mtn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <rect id="cross" width="14" height="14" fill="gray"/>
+                      </svg> </a>  
+                </div>
+                <div class="side_bar">
+                    <a href="#" class="addd">click here to add section</a>
+                    <ul>
+                        <h4>SECTION TITLE</h4>
+                        <li><a href="">Enterprise Dashboard</a> <span class="badg">new</span></li>
+                        <li class="active"><a href="">CRM+Edition</a> <span class="badg number">+247</span></li>
+                        <li><a href="">ERP System</a></li>
+                        <li><a href="">Communication</a></li>
+                        <li><a href="">Reporting</a> <a href=""><span class="spean"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <g id="sync-alt" transform="translate(0 -16)">
+                              <path id="Shape" d="M1.855,10.338.991,11.2A.58.58,0,0,1,0,10.792V7.548a.581.581,0,0,1,.581-.581H3.824a.58.58,0,0,1,.41.991L3.225,8.969A4.066,4.066,0,0,0,9.942,7a.291.291,0,0,1,.282-.221H11.61a.29.29,0,0,1,.286.343A6,6,0,0,1,1.855,10.338ZM.39,5.225A.29.29,0,0,1,.1,4.883,6,6,0,0,1,10.145,1.661L11.009.8A.581.581,0,0,1,12,1.209V4.451a.58.58,0,0,1-.581.58H8.176a.581.581,0,0,1-.41-.991l1.011-1.01A4.067,4.067,0,0,0,2.057,5a.29.29,0,0,1-.282.221Z" transform="translate(0 16)" fill="#30acda"/>
+                            </g>
+                          </svg> </span></a></li>
+                    </ul>
+                    <ul>
+                        <h4>MORE PRODUCTS </h4>
+                        <li><a href="">Document Builder</a></li>
+                        <li><a href="">Selling Points</a></li>
+                        <li><a href="">Articles Management</a></li>
+                        <li><a href="">Team</a> <span class="badg numblu">+5</span></li>
+                        <li><a href="">Target Groups</a></li> 
+                    </ul>
+                    <ul>
+                        <h4>SUPPORT</h4>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Documentation</a></li> 
+                    </ul>
+                </div>
+            </div> 
+            <!-- mobile-menu START -->
+            <div class="mobile-menu right-menu">
+                <div class="top-bars">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="javascript:void(0)" class="bars siteBar-btn mmenus"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <rect id="cross" width="14" height="14" fill="gray"/>
+                      </svg> </a>  
+                </div>
+                <div class="side_bar">
+                    <a href="#" class="addd">click here to add section</a>
+                    <ul class="nts">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"></path>
+                        </svg>
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                            <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>  
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>   
+                    </ul>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Contacts</a></li> 
+                        <li><a href="assignment.html">Assignments</a></li> 
+                        <li class="active"><a href="todo.html">To-Do Board</a></li> 
+                        <li><a href="calender.html">Calendar</a></li>    
+                        <li><a href="resource.html">Resources</a></li>    
+                        <li><a href="permissions">Permissions</a></li>    
+                    </ul>
+                </div>
+            </div> 
+        <!-- header-area END -->
+         
+        <!-- filter-area START -->
+        <div class="filter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="Search...">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                  </svg>
+                                </span>
+                            </form> 
+                            <div class="filer">
+                                <div class="with_menu">
+                                    <a href="#" class="with_menu"><i class="fas fa-filter"></i><span>1</span> </a> 
+                                    <ul>
+                                        <li><a href="">Latest</a></li>
+                                        <li><a href="">oldest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-area">
+                            <div class="tab">
+                                <ul>
+                                    <li><a class="active" href="" data-menu="crm">CRM</a></li>
+                                    <li><a href="" data-menu="erp">ERP</a></li>
+                                    <li><a href="" data-menu="cms">CMS</a></li>
+                                </ul>
+                            </div>
+                            <div class="all-users">
+                                <ul>
+                                    <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                    <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                    <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                    <li><span>k</span></li>
+                                    <li><span style="background: #F9C772;">0</span></li>
+                                    <li class="blank"></li>
+                                    <li class="number"><span style="background: var(--bac)">+3</span></li>
+                                    <li class="setting"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                        <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                      </svg>  
+                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- filter-area END -->
+
+        <!-- Info-area START -->
+        <div class="info-area">
+            <div class="container">
+                <div class="all-cons">
+                    <div class="single-conts active" data-cont="crm">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blk-menus">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="menu-blk">
+                                                <h3>ToDo / Cold Leads <span>5 Leads</span></h3>
+                                                <span><i class="fal fa-ellipsis-v"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="menu-blk">
+                                                <h3>In Progress / Warm Leadsd Leads <span>3 Leads</span></h3>
+                                                <span><i class="fal fa-ellipsis-v"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="menu-blk">
+                                                <h3>Final Check / Hot Leads <span>2 Leads</span></h3>
+                                                <span><i class="fal fa-ellipsis-v"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="menu-blk">
+                                                <h3>Done / Clients <span>4 Leads</span></h3>
+                                                <span><i class="fal fa-ellipsis-v"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="all-blks">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="add-blk">
+                                                <a href="#">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                                </svg></span>
+                                                    Add new item
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person.png" alt="" class="big-img">
+                                                    <img src="assets/img/person.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Rebecca Parker <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="snowflake" transform="translate(1)">
+                                                        <path id="Path" d="M13.032,8.837a.707.707,0,0,0,.078-.5.7.7,0,0,0-.825-.542l-2.561.734L7.734,7.5,9.724,6.468l2.561.734a.7.7,0,0,0,.289-1.376l-1.391-.209,1.555-.907a.707.707,0,0,0,.255-.96.692.692,0,0,0-.951-.257L10.486,4.4,11,3.078a.7.7,0,0,0-.447-.886.7.7,0,0,0-.877.451L9.028,5.25,7.259,6.282V4.219L9.168,2.345a.708.708,0,0,0-.052-.993.691.691,0,0,0-.983.052L7.259,2.517V.7A.7.7,0,1,0,5.866.7V2.517L4.992,1.4a.691.691,0,0,0-.983-.052.708.708,0,0,0-.052.993L5.866,4.219V6.282L4.1,5.25,3.446,2.643a.7.7,0,0,0-.877-.451.7.7,0,0,0-.447.886L2.639,4.4,1.084,3.493a.692.692,0,0,0-.951.257.707.707,0,0,0,.255.96l1.555.907L.552,5.827A.7.7,0,0,0,.841,7.2L3.4,6.468,5.391,7.5,3.4,8.532.841,7.8A.7.7,0,0,0,.552,9.174l1.391.209L.388,10.29a.707.707,0,0,0-.255.96.692.692,0,0,0,.951.257L2.639,10.6l-.516,1.321a.708.708,0,0,0,.059.569.693.693,0,0,0,1.265-.134L4.1,9.75,5.866,8.718v2.063L3.957,12.655a.708.708,0,0,0,.052.993.691.691,0,0,0,.983-.052l.875-1.112V14.3a.7.7,0,1,0,1.392,0V12.483L8.133,13.6a.691.691,0,0,0,.983.052.708.708,0,0,0,.052-.993L7.259,10.781V8.718L9.027,9.75l.651,2.607a.7.7,0,0,0,.877.451A.7.7,0,0,0,11,11.922L10.486,10.6l1.555.907a.692.692,0,0,0,.951-.257.707.707,0,0,0-.255-.96l-1.555-.907,1.391-.209A.694.694,0,0,0,13.032,8.837Z" transform="translate(0)" fill="#48a4f0"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jeremiah Mitchell <span><a href="tel:+49(0)1774334347">+49 (0) 177 433 434 7</a></span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-2.png" alt="" class="big-img">
+                                                    <img src="assets/img/person.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Rebecca Parker <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="snowflake" transform="translate(1)">
+                                                        <path id="Path" d="M13.032,8.837a.707.707,0,0,0,.078-.5.7.7,0,0,0-.825-.542l-2.561.734L7.734,7.5,9.724,6.468l2.561.734a.7.7,0,0,0,.289-1.376l-1.391-.209,1.555-.907a.707.707,0,0,0,.255-.96.692.692,0,0,0-.951-.257L10.486,4.4,11,3.078a.7.7,0,0,0-.447-.886.7.7,0,0,0-.877.451L9.028,5.25,7.259,6.282V4.219L9.168,2.345a.708.708,0,0,0-.052-.993.691.691,0,0,0-.983.052L7.259,2.517V.7A.7.7,0,1,0,5.866.7V2.517L4.992,1.4a.691.691,0,0,0-.983-.052.708.708,0,0,0-.052.993L5.866,4.219V6.282L4.1,5.25,3.446,2.643a.7.7,0,0,0-.877-.451.7.7,0,0,0-.447.886L2.639,4.4,1.084,3.493a.692.692,0,0,0-.951.257.707.707,0,0,0,.255.96l1.555.907L.552,5.827A.7.7,0,0,0,.841,7.2L3.4,6.468,5.391,7.5,3.4,8.532.841,7.8A.7.7,0,0,0,.552,9.174l1.391.209L.388,10.29a.707.707,0,0,0-.255.96.692.692,0,0,0,.951.257L2.639,10.6l-.516,1.321a.708.708,0,0,0,.059.569.693.693,0,0,0,1.265-.134L4.1,9.75,5.866,8.718v2.063L3.957,12.655a.708.708,0,0,0,.052.993.691.691,0,0,0,.983-.052l.875-1.112V14.3a.7.7,0,1,0,1.392,0V12.483L8.133,13.6a.691.691,0,0,0,.983.052.708.708,0,0,0,.052-.993L7.259,10.781V8.718L9.027,9.75l.651,2.607a.7.7,0,0,0,.877.451A.7.7,0,0,0,11,11.922L10.486,10.6l1.555.907a.692.692,0,0,0,.951-.257.707.707,0,0,0-.255-.96l-1.555-.907,1.391-.209A.694.694,0,0,0,13.032,8.837Z" transform="translate(0)" fill="#48a4f0"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jeremiah Mitchell <span><a href="tel:+49(0)1774334347">+49 (0) 177 433 434 7</a></span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-3.png" alt="" class="big-img">
+                                                    <img src="assets/img/person.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Rebecca Parker <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="snowflake" transform="translate(1)">
+                                                        <path id="Path" d="M13.032,8.837a.707.707,0,0,0,.078-.5.7.7,0,0,0-.825-.542l-2.561.734L7.734,7.5,9.724,6.468l2.561.734a.7.7,0,0,0,.289-1.376l-1.391-.209,1.555-.907a.707.707,0,0,0,.255-.96.692.692,0,0,0-.951-.257L10.486,4.4,11,3.078a.7.7,0,0,0-.447-.886.7.7,0,0,0-.877.451L9.028,5.25,7.259,6.282V4.219L9.168,2.345a.708.708,0,0,0-.052-.993.691.691,0,0,0-.983.052L7.259,2.517V.7A.7.7,0,1,0,5.866.7V2.517L4.992,1.4a.691.691,0,0,0-.983-.052.708.708,0,0,0-.052.993L5.866,4.219V6.282L4.1,5.25,3.446,2.643a.7.7,0,0,0-.877-.451.7.7,0,0,0-.447.886L2.639,4.4,1.084,3.493a.692.692,0,0,0-.951.257.707.707,0,0,0,.255.96l1.555.907L.552,5.827A.7.7,0,0,0,.841,7.2L3.4,6.468,5.391,7.5,3.4,8.532.841,7.8A.7.7,0,0,0,.552,9.174l1.391.209L.388,10.29a.707.707,0,0,0-.255.96.692.692,0,0,0,.951.257L2.639,10.6l-.516,1.321a.708.708,0,0,0,.059.569.693.693,0,0,0,1.265-.134L4.1,9.75,5.866,8.718v2.063L3.957,12.655a.708.708,0,0,0,.052.993.691.691,0,0,0,.983-.052l.875-1.112V14.3a.7.7,0,1,0,1.392,0V12.483L8.133,13.6a.691.691,0,0,0,.983.052.708.708,0,0,0,.052-.993L7.259,10.781V8.718L9.027,9.75l.651,2.607a.7.7,0,0,0,.877.451A.7.7,0,0,0,11,11.922L10.486,10.6l1.555.907a.692.692,0,0,0,.951-.257.707.707,0,0,0-.255-.96l-1.555-.907,1.391-.209A.694.694,0,0,0,13.032,8.837Z" transform="translate(0)" fill="#48a4f0"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jeremiah Mitchell <span><a href="tel:+49(0)1774334347">+49 (0) 177 433 434 7</a></span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-4.png" alt="" class="big-img"> 
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Rebecca Parker <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="snowflake" transform="translate(1)">
+                                                        <path id="Path" d="M13.032,8.837a.707.707,0,0,0,.078-.5.7.7,0,0,0-.825-.542l-2.561.734L7.734,7.5,9.724,6.468l2.561.734a.7.7,0,0,0,.289-1.376l-1.391-.209,1.555-.907a.707.707,0,0,0,.255-.96.692.692,0,0,0-.951-.257L10.486,4.4,11,3.078a.7.7,0,0,0-.447-.886.7.7,0,0,0-.877.451L9.028,5.25,7.259,6.282V4.219L9.168,2.345a.708.708,0,0,0-.052-.993.691.691,0,0,0-.983.052L7.259,2.517V.7A.7.7,0,1,0,5.866.7V2.517L4.992,1.4a.691.691,0,0,0-.983-.052.708.708,0,0,0-.052.993L5.866,4.219V6.282L4.1,5.25,3.446,2.643a.7.7,0,0,0-.877-.451.7.7,0,0,0-.447.886L2.639,4.4,1.084,3.493a.692.692,0,0,0-.951.257.707.707,0,0,0,.255.96l1.555.907L.552,5.827A.7.7,0,0,0,.841,7.2L3.4,6.468,5.391,7.5,3.4,8.532.841,7.8A.7.7,0,0,0,.552,9.174l1.391.209L.388,10.29a.707.707,0,0,0-.255.96.692.692,0,0,0,.951.257L2.639,10.6l-.516,1.321a.708.708,0,0,0,.059.569.693.693,0,0,0,1.265-.134L4.1,9.75,5.866,8.718v2.063L3.957,12.655a.708.708,0,0,0,.052.993.691.691,0,0,0,.983-.052l.875-1.112V14.3a.7.7,0,1,0,1.392,0V12.483L8.133,13.6a.691.691,0,0,0,.983.052.708.708,0,0,0,.052-.993L7.259,10.781V8.718L9.027,9.75l.651,2.607a.7.7,0,0,0,.877.451A.7.7,0,0,0,11,11.922L10.486,10.6l1.555.907a.692.692,0,0,0,.951-.257.707.707,0,0,0-.255-.96l-1.555-.907,1.391-.209A.694.694,0,0,0,13.032,8.837Z" transform="translate(0)" fill="#48a4f0"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jeremiah Mitchell <span><a href="tel:+49(0)1774334347">+49 (0) 177 433 434 7</a></span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-5.png" alt="" class="big-img"> 
+                                                    <span style="background: #82C9D2;">V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Rebecca Parker <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="snowflake" transform="translate(1)">
+                                                        <path id="Path" d="M13.032,8.837a.707.707,0,0,0,.078-.5.7.7,0,0,0-.825-.542l-2.561.734L7.734,7.5,9.724,6.468l2.561.734a.7.7,0,0,0,.289-1.376l-1.391-.209,1.555-.907a.707.707,0,0,0,.255-.96.692.692,0,0,0-.951-.257L10.486,4.4,11,3.078a.7.7,0,0,0-.447-.886.7.7,0,0,0-.877.451L9.028,5.25,7.259,6.282V4.219L9.168,2.345a.708.708,0,0,0-.052-.993.691.691,0,0,0-.983.052L7.259,2.517V.7A.7.7,0,1,0,5.866.7V2.517L4.992,1.4a.691.691,0,0,0-.983-.052.708.708,0,0,0-.052.993L5.866,4.219V6.282L4.1,5.25,3.446,2.643a.7.7,0,0,0-.877-.451.7.7,0,0,0-.447.886L2.639,4.4,1.084,3.493a.692.692,0,0,0-.951.257.707.707,0,0,0,.255.96l1.555.907L.552,5.827A.7.7,0,0,0,.841,7.2L3.4,6.468,5.391,7.5,3.4,8.532.841,7.8A.7.7,0,0,0,.552,9.174l1.391.209L.388,10.29a.707.707,0,0,0-.255.96.692.692,0,0,0,.951.257L2.639,10.6l-.516,1.321a.708.708,0,0,0,.059.569.693.693,0,0,0,1.265-.134L4.1,9.75,5.866,8.718v2.063L3.957,12.655a.708.708,0,0,0,.052.993.691.691,0,0,0,.983-.052l.875-1.112V14.3a.7.7,0,1,0,1.392,0V12.483L8.133,13.6a.691.691,0,0,0,.983.052.708.708,0,0,0,.052-.993L7.259,10.781V8.718L9.027,9.75l.651,2.607a.7.7,0,0,0,.877.451A.7.7,0,0,0,11,11.922L10.486,10.6l1.555.907a.692.692,0,0,0,.951-.257.707.707,0,0,0-.255-.96l-1.555-.907,1.391-.209A.694.694,0,0,0,13.032,8.837Z" transform="translate(0)" fill="#48a4f0"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jeremiah Mitchell <span><a href="tel:+49(0)1774334347">+49 (0) 177 433 434 7</a></span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="all-blks">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="add-blk">
+                                                <a href="#">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                                </svg></span>
+                                                    Add new item
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-6.png" alt="" class="big-img">
+                                                    <img src="assets/img/person-3.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Vernon Rowe <span><i class="fas fa-fire"></i></span></h4>
+                                                    <p>Elijah Rodgers <span>630-141-2343</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-7.png" alt="" class="big-img">
+                                                    <img src="assets/img/person-2.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Gary Tran <span><i class="fas fa-fire"></i></span></h4>
+                                                    <p>Augusta Gregory <span>122-895-5198</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-8.png" alt="" class="big-img">
+                                                    <img src="assets/img/person-4.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Cynthia Cohen <span><i class="fas fa-fire"></i></span></h4>
+                                                    <p>Eleanor Klein <span>josiah_mccullough@retta.net</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="all-blks">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="add-blk">
+                                                <a href="#">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                                </svg></span>
+                                                    Add new item
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-9.png" alt="" class="big-img"> 
+                                                    <span style="background: #82C9D2;">V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Helen Martinez <span><i class="fas fa-pepper-hot"></i></span></h4>
+                                                    <p>Anne Hamilton <span>188-348-9125</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-10.png" alt="" class="big-img">
+                                                    <img src="assets/img/person.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Isaac Reed <span><i class="fas fa-pepper-hot"></i></span></h4>
+                                                    <p>Sue Guzman <span>bette.zboncak@amir.com</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="all-blks">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="add-blk">
+                                                <a href="#">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                                </svg></span>
+                                                    Add new item
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-11.png" alt="" class="big-img">
+                                                    <img src="assets/img/person-7.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Maria Green <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="rocket" transform="translate(-1)">
+                                                        <path id="Shape" d="M6.549,14.269v-2.78c-.374.172-.746.345-1.1.523a.466.466,0,0,1-.541-.087L3.046,10.065a.466.466,0,0,1-.088-.541c.178-.357.354-.728.526-1.1H.7A.7.7,0,0,1,.076,7.406L1.52,4.517a1.4,1.4,0,0,1,1.254-.774H5.821C7.172,1.614,8.982,0,12,0a10.621,10.621,0,0,1,2.412.2.464.464,0,0,1,.356.357,10.46,10.46,0,0,1,.2,2.415c0,3-1.62,4.819-3.742,6.172V12.2a1.4,1.4,0,0,1-.775,1.255L7.564,14.9a.7.7,0,0,1-.311.074A.7.7,0,0,1,6.549,14.269Z" transform="translate(1 0)" fill="#9fa9af"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Jay Blake <span>681-149-2843</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-12.png" alt="" class="big-img">
+                                                    <img src="assets/img/person-4.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Isabella Cunningham <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="rocket" transform="translate(-1)">
+                                                        <path id="Shape" d="M6.549,14.269v-2.78c-.374.172-.746.345-1.1.523a.466.466,0,0,1-.541-.087L3.046,10.065a.466.466,0,0,1-.088-.541c.178-.357.354-.728.526-1.1H.7A.7.7,0,0,1,.076,7.406L1.52,4.517a1.4,1.4,0,0,1,1.254-.774H5.821C7.172,1.614,8.982,0,12,0a10.621,10.621,0,0,1,2.412.2.464.464,0,0,1,.356.357,10.46,10.46,0,0,1,.2,2.415c0,3-1.62,4.819-3.742,6.172V12.2a1.4,1.4,0,0,1-.775,1.255L7.564,14.9a.7.7,0,0,1-.311.074A.7.7,0,0,1,6.549,14.269Z" transform="translate(1 0)" fill="#9fa9af"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Isabella Cunningham <span>469-810-3562</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-13.png" alt="" class="big-img"> 
+                                                    <span style="background: #E17373;">V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Lee Owen <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="rocket" transform="translate(-1)">
+                                                        <path id="Shape" d="M6.549,14.269v-2.78c-.374.172-.746.345-1.1.523a.466.466,0,0,1-.541-.087L3.046,10.065a.466.466,0,0,1-.088-.541c.178-.357.354-.728.526-1.1H.7A.7.7,0,0,1,.076,7.406L1.52,4.517a1.4,1.4,0,0,1,1.254-.774H5.821C7.172,1.614,8.982,0,12,0a10.621,10.621,0,0,1,2.412.2.464.464,0,0,1,.356.357,10.46,10.46,0,0,1,.2,2.415c0,3-1.62,4.819-3.742,6.172V12.2a1.4,1.4,0,0,1-.775,1.255L7.564,14.9a.7.7,0,0,1-.311.074A.7.7,0,0,1,6.549,14.269Z" transform="translate(1 0)" fill="#9fa9af"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Karl Waters <span>jesse_bins@yahoo.com</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="blk">
+                                                <div class="blk-imgs">
+                                                    <img src="assets/img/person-14.png" alt="" class="big-img">
+                                                    <img src="assets/img/person.png" alt="" class="sm-img">
+                                                    <span>V</span>
+                                                </div>
+                                                <div class="blk-wrp">
+                                                    <h4>Maggie Alexander  <span><svg id="fire-hot" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                        <g id="rocket" transform="translate(-1)">
+                                                        <path id="Shape" d="M6.549,14.269v-2.78c-.374.172-.746.345-1.1.523a.466.466,0,0,1-.541-.087L3.046,10.065a.466.466,0,0,1-.088-.541c.178-.357.354-.728.526-1.1H.7A.7.7,0,0,1,.076,7.406L1.52,4.517a1.4,1.4,0,0,1,1.254-.774H5.821C7.172,1.614,8.982,0,12,0a10.621,10.621,0,0,1,2.412.2.464.464,0,0,1,.356.357,10.46,10.46,0,0,1,.2,2.415c0,3-1.62,4.819-3.742,6.172V12.2a1.4,1.4,0,0,1-.775,1.255L7.564,14.9a.7.7,0,0,1-.311.074A.7.7,0,0,1,6.549,14.269Z" transform="translate(1 0)" fill="#9fa9af"/>
+                                                        </g>
+                                                    </svg></span>
+                                                    </h4>
+                                                    <p>Ellen Douglas <span>watsica_kiera@yahoo.com</span></p>
+                                                    <p class="tags">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.8" viewBox="0 0 16 12.8">
+                                                            <path id="Shape" d="M8.849,12.449,8.8,12.4l.566-.565.044.044a.4.4,0,0,0,.566,0l5.1-5.1a.4.4,0,0,0,0-.565l-5.3-5.3A.4.4,0,0,0,9.5.8H9.014l-.8-.8H9.5a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Zm-3.2,0-5.3-5.3A1.2,1.2,0,0,1,0,6.3V1.2A1.2,1.2,0,0,1,1.2,0H6.3a1.2,1.2,0,0,1,.849.352l5.3,5.3a1.2,1.2,0,0,1,0,1.7l-5.1,5.1a1.2,1.2,0,0,1-1.7,0Z" fill="#8d8d8d"/>
+                                                        </svg> 
+                                                    </span> Call-Center,  Support,  Order</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-conts" data-cont="erp"> </div>
+                    <div class="single-conts" data-cont="cms">  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Info-area END -->
+   
+        <!-- Footer-area START -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-contents">
+                            <div class="deadlines">
+                                <h4>Deadline <span>Calendar Widget</span></h4>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                            <p class="month">feb '19</p> 
+                                <ul class="days">
+                                    <li>mon <span>01</span></li>
+                                    <li>tue <span>01</span></li>
+                                    <li>wed <span>01</span></li>
+                                    <li>thu <span>01</span></li>
+                                    <li>fri <span>01</span></li>
+                                    <li class="red">sat <span>01</span></li>
+                                    <li class="red">sun <span>01</span></li>
+                                    <li>mon <span>01</span></li>
+                                    <li>tue <span>01</span></li>
+                                    <li>wed <span>01</span></li>
+                                    <li>thu <span>01</span></li>
+                                    <li>fri <span>01</span></li>
+                                    <li class="red">sat <span>01</span></li> 
+                                </ul>
+                                <ul class="active days">
+                                    <li class="arrow"><span><i class="fal fa-angle-left"></i></span></li>
+                                    <li>mon <span>01</span></li>
+                                    <li>tue <span>01</span></li>
+                                    <li>wed <span>01</span></li>
+                                    <li>thu <span>01</span></li>
+                                    <li>fri <span>01</span></li>
+                                    <li class="red">sat <span>01</span></li>
+                                    <li class="red">sun <span>01</span></li>
+                                    <li class="arrow"><span><i class="fal fa-angle-right"></i></span></li>
+                                </ul>
+                                <ul class="days">
+                                    <li>mon <span>01</span></li>
+                                    <li>tue <span>01</span></li>
+                                    <li>wed <span>01</span></li>
+                                    <li>thu <span>01</span></li>
+                                    <li>fri <span>01</span></li>
+                                    <li class="red">sat <span>01</span></li>
+                                    <li class="red">sun <span>01</span></li>
+                                    <li>mon <span>01</span></li>
+                                    <li>tue <span>01</span></li>
+                                    <li>wed <span>01</span></li>
+                                    <li>thu <span>01</span></li>
+                                    <li>fri <span>01</span></li>
+                                    <li class="red">sat <span>01</span></li> 
+                                </ul>  
+                            <div class="week">
+                                <ul>
+                                    <li>h</li>
+                                    <li>d</li>
+                                    <li>w</li>
+                                    <li>m</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-area END -->
+ 
+    
+		<!-- JS here --> 
+        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/main.js"></script> 
+    </body>
+</html>

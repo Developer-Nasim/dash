@@ -1,0 +1,2202 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site Title Here</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body class="calender">
+
+       
+        <!-- header-area START -->
+        <div class="header-area" id="header">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="col-lg-2 col-8">
+                        <div class="logo-area bar">
+                            <a href="#" class="menu bar-icon siteBar-btn mtn">  
+                                <span></span>  
+                                <!-- <i class="fal fa-bars"></i> -->
+                            </a>
+                            <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="menu-area">
+                            <nav>
+                                <ul id="nav">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="contact.html">Contacts</a></li> 
+                                    <li><a href="assignments.html">Assignments</a></li> 
+                                    <li><a href="todo.html">To-Do Board</a></li> 
+                                    <li><a class="active" href="calender.html">Calendar</a></li>    
+                                    <li><a href="resource.html">Resources</a></li>    
+                                    <li><a href="permissions">Permissions</a></li>    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4 text-right">
+                        <div class="header_action"> 
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                </svg>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                    <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li class="user">
+                                    <img src="assets/img/user.png" alt="">
+                                    <span><i class="fal fa-angle-down"></i></span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                          <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                        </svg> General Settings</a></li>
+                                        <li><a href="#"><svg id="money-check" xmlns="http://www.w3.org/2000/svg" width="13" height="9.1" viewBox="0 0 13 9.1">
+                                          <path id="Shape" d="M.65,9.1A.65.65,0,0,1,0,8.45V.325A.325.325,0,0,1,.325,0h12.35A.325.325,0,0,1,13,.325V8.45a.65.65,0,0,1-.65.65Z" fill="#fff"/>
+                                        </svg>  Invoice Settings</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Import</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Export</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                          <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                        </svg>  Support Requests</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10.285" viewBox="0 0 12 10.285">
+                                          <path id="Shape" d="M.321,10.285A.323.323,0,0,1,0,9.964V.321A.323.323,0,0,1,.321,0h.75a.323.323,0,0,1,.322.321V9.964a.323.323,0,0,1-.322.321Zm7.154-.951-.525-.525a.318.318,0,0,1,.005-.458l2.6-2.509H2.893a.323.323,0,0,1-.321-.321V4.77a.323.323,0,0,1,.321-.321H9.556L6.956,1.94a.322.322,0,0,1-.005-.458L7.475.956A.318.318,0,0,1,7.931.95l3.974,3.965a.322.322,0,0,1,0,.455L7.931,9.334a.322.322,0,0,1-.455,0Z" fill="#fff"/>
+                                        </svg>  Logout</a></li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                            <div class="bar">
+                                <a class="bar-icon mmenus siteBar-btn" href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+            <!-- mobile-menu START -->
+            <div class="mobile-menu left-menu">
+                <div class="top-bars">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="javascript:void(0)" class="bars siteBar-btn mtn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <rect id="cross" width="14" height="14" fill="gray"/>
+                      </svg> </a>  
+                </div>
+                <div class="side_bar">
+                    
+                    <a href="#" class="addd">click here to add section</a>
+                    <ul>
+                        <h4>SECTION TITLE</h4>
+                        <li><a href="">Enterprise Dashboard</a> <span class="badg">new</span></li>
+                        <li class="active"><a href="">CRM+Edition</a> <span class="badg number">+247</span></li>
+                        <li><a href="">ERP System</a></li>
+                        <li><a href="">Communication</a></li>
+                        <li><a href="">Reporting</a> <a href=""><span class="spean"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <g id="sync-alt" transform="translate(0 -16)">
+                              <path id="Shape" d="M1.855,10.338.991,11.2A.58.58,0,0,1,0,10.792V7.548a.581.581,0,0,1,.581-.581H3.824a.58.58,0,0,1,.41.991L3.225,8.969A4.066,4.066,0,0,0,9.942,7a.291.291,0,0,1,.282-.221H11.61a.29.29,0,0,1,.286.343A6,6,0,0,1,1.855,10.338ZM.39,5.225A.29.29,0,0,1,.1,4.883,6,6,0,0,1,10.145,1.661L11.009.8A.581.581,0,0,1,12,1.209V4.451a.58.58,0,0,1-.581.58H8.176a.581.581,0,0,1-.41-.991l1.011-1.01A4.067,4.067,0,0,0,2.057,5a.29.29,0,0,1-.282.221Z" transform="translate(0 16)" fill="#30acda"/>
+                            </g>
+                          </svg> </span></a></li>
+                    </ul>
+                    <ul>
+                        <h4>MORE PRODUCTS </h4>
+                        <li><a href="">Document Builder</a></li>
+                        <li><a href="">Selling Points</a></li>
+                        <li><a href="">Articles Management</a></li>
+                        <li><a href="">Team</a> <span class="badg numblu">+5</span></li>
+                        <li><a href="">Target Groups</a></li> 
+                    </ul>
+                    <ul>
+                        <h4>SUPPORT</h4>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Documentation</a></li> 
+                    </ul>
+                </div>
+            </div> 
+            <!-- mobile-menu START -->
+            <div class="mobile-menu right-menu">
+                <div class="top-bars">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="javascript:void(0)" class="bars siteBar-btn mmenus"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <rect id="cross" width="14" height="14" fill="gray"/>
+                      </svg> </a>  
+                </div>
+                <div class="side_bar">
+                    <a href="#" class="addd">click here to add section</a>
+                    <ul class="nts">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"></path>
+                        </svg>
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                            <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>  
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                        </svg> 
+                        </li>   
+                    </ul>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Contacts</a></li> 
+                        <li><a href="assignment.html">Assignments</a></li> 
+                        <li class="active"><a href="todo.html">To-Do Board</a></li> 
+                        <li><a href="calender.html">Calendar</a></li>    
+                        <li><a href="resource.html">Resources</a></li>    
+                        <li><a href="permissions">Permissions</a></li>    
+                    </ul>
+                </div>
+            </div> 
+        <!-- header-area END -->
+         
+        <!-- filter-area START -->
+        <div class="filter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="Search...">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                  </svg>
+                                </span>
+                            </form> 
+                            <div class="filer">
+                                <div class="with_menu">
+                                    <a href="#" class="with_menu"><i class="fas fa-filter"></i><span>1</span> </a> 
+                                    <ul>
+                                        <li><a href="">Latest</a></li>
+                                        <li><a href="">oldest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-area">
+                            <div class="tab">
+                                <ul>
+                                    <li><a class="active" href="" data-menu="Month">Month</a></li>
+                                    <li><a href="" data-menu="Week">Week</a></li>
+                                    <li><a href="" data-menu="Day">Day</a></li>
+                                </ul>
+                            </div>
+                            <div class="all-users">
+                                <ul>
+                                    <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                    <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                    <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                    <li><span>k</span></li>
+                                    <li><span style="background: #F9C772;">0</span></li>
+                                    <li class="blank"></li>
+                                    <li class="number"><span style="background: var(--bac)">+3</span></li>
+                                    <li class="setting"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                        <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                      </svg>  
+                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- filter-area END -->
+
+        <!-- Info-area START -->
+        <div class="info-area">
+            <div class="container full-zero-pad">
+                <div class="all-cons"> 
+		
+                        <button class="calbar-btn"><i class="fal fa-bars"></i></button>
+                    <div class="single-conts active" data-cont="Month">
+                         <div class="calendar month"> 
+                            <div class="cal-left">
+                                <h4>Calendar options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Shape" d="M2.579,15a.706.706,0,0,1-.7-.7v-2.6a5.626,5.626,0,0,1,0-8.385V.7a.706.706,0,0,1,.7-.7H8.672a.706.706,0,0,1,.7.7v2.6a5.626,5.626,0,0,1,0,8.385v2.6a.706.706,0,0,1-.7.7Z" fill="#5e5e5e"/>
+                                            </svg> Free Time 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="palm-tree" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                <path id="Combined_Shape" data-name="Combined Shape" d="M14.414,14.707a.293.293,0,1,1,.293.293A.292.292,0,0,1,14.414,14.707ZM.293,15a.293.293,0,1,1,0-.586H5.748a13.643,13.643,0,0,0,1.235-2.621,11.9,11.9,0,0,0,.641-2.516,8.944,8.944,0,0,0-.548-4.519,2.47,2.47,0,0,0-.5.591.405.405,0,0,0-.011.265c.005.034.011.067.013.1a.738.738,0,0,1-.341.7A1.275,1.275,0,0,0,5.9,6.8c-.027.052.054.2.14.355a1.127,1.127,0,0,1,.157.367.913.913,0,0,1-.211.445c-.131.188-.255.366-.177.522a1.056,1.056,0,0,0,.335.345.9.9,0,0,1,.388.472c.177.669.158,1.106-.058,1.337a.509.509,0,0,1-.377.159A2.475,2.475,0,0,1,4.331,9.653a3.858,3.858,0,0,1-.56-2.7,1.689,1.689,0,0,1-.441.13,2.682,2.682,0,0,0-.526.151c-.092.069-.027.294.013.429.008.03.015.055.02.074a1.289,1.289,0,0,1,.022.747c-.111.282-.509,1.2-1.01,1.2A.544.544,0,0,1,1.465,9.5,2.616,2.616,0,0,1,.8,7.56,4.97,4.97,0,0,1,2.478,4.34,5.148,5.148,0,0,1,4.17,3.25c0-.015-.284-.565-.311-.594a2.042,2.042,0,0,0-.321.291L3.487,3a1.059,1.059,0,0,1-.462.275.811.811,0,0,1-.184.022,1.011,1.011,0,0,1-.565-.205.362.362,0,0,0-.183-.074c-.1,0-.137.113-.175.244a1.413,1.413,0,0,1-.047.144.652.652,0,0,1-.306.374,2.33,2.33,0,0,1-.972.3.653.653,0,0,1-.35-.089A.52.52,0,0,1,0,3.515C0,1.612,2.007.585,3.9.585A5.1,5.1,0,0,1,7.446,2.34,5.09,5.09,0,0,1,10.71.069a6.18,6.18,0,0,1,.9-.069,3.724,3.724,0,0,1,2.329.708A2.755,2.755,0,0,1,14.992,2.4a.349.349,0,0,1-.354.407,2.373,2.373,0,0,1-.706-.207,6.552,6.552,0,0,0-2.263-.544,2.752,2.752,0,0,0-.927.153,4.438,4.438,0,0,1,1.372.416,4.111,4.111,0,0,1,2.224,2.426,2.757,2.757,0,0,1-.15,1.985.494.494,0,0,1-.435.313c-.357,0-.8-.437-1.072-.813A1.171,1.171,0,0,1,12.53,5.9c0-.039,0-.084,0-.131.008-.148.018-.316-.085-.4a.326.326,0,0,0-.211-.054l-.094,0-.086,0h-.031a.828.828,0,0,1-.792-.638c-.058-.16-.105-.214-.188-.214a.749.749,0,0,0-.185.039l-.058.016a1.249,1.249,0,0,1-.332.054.582.582,0,0,1-.378-.132,1.794,1.794,0,0,1-.137-.129.7.7,0,0,0-.374-.245,2.454,2.454,0,0,0-.352-.025,2.57,2.57,0,0,0-.511.053,4.482,4.482,0,0,1,.453,1.08c.018.053.031.091.037.106A11.593,11.593,0,0,1,9.728,7.39a11.415,11.415,0,0,1,.118,3.239,8.869,8.869,0,0,1-1.061,3.785h4.75a.293.293,0,1,1,0,.586Zm6.125-.586h1.7c.153-.275.286-.544.408-.821H6.845C6.713,13.863,6.569,14.139,6.419,14.414Zm.7-1.407H8.762a8.411,8.411,0,0,0,.247-.821H7.461C7.359,12.453,7.244,12.73,7.12,13.008ZM7.672,11.6H9.133c.04-.227.074-.457.1-.7H7.887C7.824,11.128,7.751,11.364,7.672,11.6Zm.362-1.289H9.281c.013-.222.021-.459.023-.7H8.168C8.132,9.838,8.087,10.075,8.033,10.312Zm-3.6-3.8a3.622,3.622,0,0,0,.38,2.809,2.194,2.194,0,0,0,1.24.893,1.744,1.744,0,0,0-.09-.752,1.331,1.331,0,0,0-.245-.256l-.012-.011a1.358,1.358,0,0,1-.514-.71A.884.884,0,0,1,5.448,7.8a.706.706,0,0,0,.162-.277.969.969,0,0,0-.1-.2.882.882,0,0,1-.183-.628.978.978,0,0,1,.449-.552,1.087,1.087,0,0,0,.212-.184,1,1,0,0,0,.006-.28v-.01a1.047,1.047,0,0,1,.085-.615,3.024,3.024,0,0,1,.554-.68,1.18,1.18,0,0,1-.261-.483A4.56,4.56,0,0,0,4.432,6.512ZM2.893,4.755a4.463,4.463,0,0,0-1.5,2.779,2.078,2.078,0,0,0,.466,1.527,1.915,1.915,0,0,0,.453-.791,1.289,1.289,0,0,0-.043-.394,1.447,1.447,0,0,1,.014-.915c.139-.284.529-.377.981-.484l.01,0a2.448,2.448,0,0,0,.609-.193A5.158,5.158,0,0,1,6.1,3.363,5.532,5.532,0,0,0,2.893,4.755ZM8.286,8.437c-.01.217-.024.41-.043.587H9.3c-.006-.208-.019-.427-.038-.649Zm-.021-1.17c.016.2.025.4.028.582l.9-.058c-.027-.194-.062-.4-.1-.616Zm3.522-2.785a.913.913,0,0,0,.093.211.716.716,0,0,0,.31.049H12.2a.881.881,0,0,1,.693.236,1.362,1.362,0,0,1,.225.847,1.432,1.432,0,0,0,.045.369,1.743,1.743,0,0,0,.525.544,2.21,2.21,0,0,0,.093-1.526A3.622,3.622,0,0,0,11.84,3.14a3.779,3.779,0,0,0-1.758-.386A4.94,4.94,0,0,0,8.515,3a1.16,1.16,0,0,1,.154.506,3,3,0,0,1,1-.021.755.755,0,0,1,.423.264.811.811,0,0,0,.335.239A.287.287,0,0,0,10.51,4a1.222,1.222,0,0,0,.317-.066,1.105,1.105,0,0,1,.291-.062C11.423,3.874,11.642,4.073,11.787,4.482ZM8.079,6.006c.054.258.094.481.122.679L8.966,6.6c-.053-.216-.118-.45-.193-.695ZM7.7,4.743c.092.243.169.476.232.693l.655-.1c-.1-.276-.211-.563-.334-.853A1.179,1.179,0,0,1,7.7,4.743ZM6.914,3.588A.586.586,0,1,0,7.5,3,.587.587,0,0,0,6.914,3.588ZM1.218,2.1A2.186,2.186,0,0,0,.586,3.488H.6a1.054,1.054,0,0,0,.334-.076L.971,3.4c.192-.067.33-.114.392-.326a.813.813,0,0,1,.472-.626A.726.726,0,0,1,2.077,2.4a.934.934,0,0,1,.517.193.452.452,0,0,0,.243.091c.128,0,.224-.089.368-.235a1.012,1.012,0,0,1,.661-.389.583.583,0,0,1,.181.031c.267.089.407.389.542.678.085.182.132.231.222.231a.959.959,0,0,0,.212-.041l.014,0a5.483,5.483,0,0,1,1.37-.194c.087,0,.171,0,.251.009a1.18,1.18,0,0,1,.228-.183A4.533,4.533,0,0,0,3.9,1.171,3.622,3.622,0,0,0,1.218,2.1ZM10.8.649A4.554,4.554,0,0,0,8.015,2.535l.021.011.021.011A4.784,4.784,0,0,1,9.47,2.2a4.174,4.174,0,0,1,1.436-.649,3.407,3.407,0,0,1,.755-.081,7.1,7.1,0,0,1,2.478.579l.067.025.1.038a2.338,2.338,0,0,0-.726-.94A3.153,3.153,0,0,0,11.606.586,5.535,5.535,0,0,0,10.8.649Z" fill="#5e5e5e"/>
+                                            </svg> Hollidays 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"/>
+                                            </svg>  Travels 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"/>
+                                            </svg>  Meets
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                <g id="tasks" transform="translate(0 0)">
+                                                <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tasks 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tickets 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <h4>More options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="calendar-check" xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V3.281A1.407,1.407,0,0,1,1.406,1.875H2.813V.352A.352.352,0,0,1,3.164,0H3.4A.352.352,0,0,1,3.75.352V1.875H9.375V.352A.352.352,0,0,1,9.726,0h.235a.352.352,0,0,1,.351.352V1.875h1.407a1.406,1.406,0,0,1,1.406,1.407V13.594A1.406,1.406,0,0,1,11.719,15Z" fill="#5e5e5e"/>
+                                            </svg> Booking
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i> 
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"/>
+                                            </svg>  Earnings  <span>NEW</span> 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="bullhorn" xmlns="http://www.w3.org/2000/svg" width="15" height="13.331" viewBox="0 0 15 13.331">
+                                            <path id="Shape" d="M2.648,12.623a.816.816,0,0,1-.208-.344,9.693,9.693,0,0,1-.752-3.946H1.25A1.25,1.25,0,0,1,0,7.082v-2.5a1.25,1.25,0,0,1,1.25-1.25H5.415A12.578,12.578,0,0,0,13.331,0a.833.833,0,0,1,.833.833V5a.833.833,0,1,1,0,1.666v4.166a.833.833,0,0,1-.833.833,12.615,12.615,0,0,0-7.85-3.333.756.756,0,0,0-.287.893.837.837,0,0,1,.11.979c-.135.234-.029.367.7.82a.832.832,0,0,1,.311,1.065,2.143,2.143,0,0,1-1.967,1.242A2.422,2.422,0,0,1,2.648,12.623Z" fill="#5e5e5e"/>
+                                            </svg>   Campaigns 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.288" height="12" viewBox="0 0 10.288 12">
+                                                <g id="percent" transform="translate(0)">
+                                                <path id="Shape" d="M5.144,9.428A2.572,2.572,0,1,1,7.715,12,2.572,2.572,0,0,1,5.144,9.428ZM.162,12a.16.16,0,0,1-.129-.257L9.188.064A.162.162,0,0,1,9.317,0h.809a.161.161,0,0,1,.129.257L1.1,11.936A.157.157,0,0,1,.97,12ZM0,2.571A2.571,2.571,0,1,1,2.572,5.143,2.572,2.572,0,0,1,0,2.571Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg> Discounts
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="file-alt" xmlns="http://www.w3.org/2000/svg" width="11.248" height="15" viewBox="0 0 11.248 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V1.409A1.411,1.411,0,0,1,1.406,0H7.385a1.406,1.406,0,0,1,.993.413L10.835,2.87a1.414,1.414,0,0,1,.413,1v9.727A1.407,1.407,0,0,1,9.842,15Z" fill="#5e5e5e"/>
+                                            </svg> Contracts 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <button class="more">Show All</button>
+                            </div>
+                            <div class="cal-body">
+                                <div class="cal-row btNone">
+                                    <div class="breadcrabp">
+                                        <p>CW 12</p>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>mon <span>01</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>tue <span>02</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk orange">
+                                        <p>wed <span>03</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>thu <span>04</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk people">
+                                        <p class="org-color">Mardi Gras <span>05</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1> 
+                                        <div class="b-blks">
+                                            <p>Restaurant Joe’s Grillhou..</p>
+                                            <div class="all-users">
+                                                <ul>
+                                                    <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                                    <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                                    <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                                    <li><span>k</span></li>
+                                                    <li><span style="background: #F9C772;">0</span></li> 
+                                                    <li class="number"><span style="background: var(--bac)">+3</span></li> 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Ash Wednesday <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>SUN <span>07</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div>
+                                <div class="cal-row">
+                                    <div class="breadcrabp">
+                                        <p>CW 13</p>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">International Wom.. <span>01</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk people">
+                                        <p>tue <span>02</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="b-blks">
+                                            <p>JFK - DXB <span>06:25 h</span></p>
+                                              <img class="plans" src="assets/img/Untitled-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Daylight Savings.. <span>03</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>thu <span>04</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <p class="bottomtxt">3 Tasks</p>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p class="org-color">Ash Wednesday <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Ash Wednesday <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>SUN <span>07</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div>
+                                <div class="cal-row">
+                                    <div class="breadcrabp">
+                                        <p>CW 14</p>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Ides of March <span>01</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>tue <span>02</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1> 
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">St. Patrick's Day <span>03</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>Ash Wednesday <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk  people">
+                                        <p>thu <span>04</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="b-blks">
+                                            <h4>10:00h <span>Planned out</span></h4>
+                                            <span class="rnd">6</span>
+                                        </div>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p class="org-color">International Earth.. <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Purim <span>07</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div>
+                                <div class="cal-row">
+                                    <div class="breadcrabp">
+                                        <p>CW 15</p>
+                                    </div>
+                                    <div class="c-blk zb">
+                                        <p>mon <span>01</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="zebra">
+                                            <img src="assets/img/time-over-area.png" alt="">
+                                            <p>2 Meets</p>
+                                            <p>1 Travel</p>
+                                            <p>1 Task</p>
+                                        </div>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>tue <span>02</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1> 
+                                    </div>
+                                    <div class="c-blk zb">
+                                        <p>wed <span>03</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="zebra">
+                                             <div class="prf">
+                                                 <div class="plf">
+                                                     <img src="assets/img/Oval.png" alt="">
+                                                     <img src="assets/img/avatar-icon-tickets.png" class="tkt" alt="">
+                                                 </div>
+                                                 <p>Tickets <b>Ariana Grande</b> Price: $ 75</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Feast of the Annun... <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk people ads">
+                                        <p>thu <span>04</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="b-blks">
+                                            <p>UX/UI - Milestones <span>06:00 pm</span></p>
+                                            <p class="adrs"> <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"/>
+                                              </svg> <span>Enerspace Coworking <br> CA 94303 Palo Alto</span></p>
+                                        </div>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p>sat <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>sun <span>07</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div>
+                                <div class="cal-row">
+                                    <div class="breadcrabp">
+                                        <p>CW 16</p>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>mon <span>01</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1> 
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>tue <span>02</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1> 
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>wed <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk zb">
+                                        <p>wed <span>03</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                        <div class="zebra"> 
+                                            <p>2 Meets</p> 
+                                            <p>1 Task</p>
+                                        </div>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p>thu <span>04</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p>sat <span>06</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>sun <span>07</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cal-right">
+                                <h4>Free Time</h4>
+                                <div class="r-sliders">
+                                    <ul>
+                                        <li>
+                                            <div class="circles-small"> 
+                                                <div class="circle-small">
+                                                    <div class="text">99h</div>
+                                                    <svg>
+                                                        <circle class="bg" cx="80" cy="80" r="37"></circle>
+                                                        <circle class="progress two" cx="40" cy="40" r="30"></circle>
+                                                    </svg>
+                                                </div>
+                                            </div> 
+                                        </li> 
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"></path>
+                                                </svg> <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"></path>
+                                                </svg> <span>7</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                    <g id="tasks" transform="translate(0 0)">
+                                                    <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>5</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                    <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                    <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="single-conts" data-cont="Week">
+                        <div class="calendar week-cal"> 
+                            <div class="cal-left">
+                                <h4>Calendar options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Shape" d="M2.579,15a.706.706,0,0,1-.7-.7v-2.6a5.626,5.626,0,0,1,0-8.385V.7a.706.706,0,0,1,.7-.7H8.672a.706.706,0,0,1,.7.7v2.6a5.626,5.626,0,0,1,0,8.385v2.6a.706.706,0,0,1-.7.7Z" fill="#5e5e5e"/>
+                                            </svg> Free Time 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="palm-tree" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                <path id="Combined_Shape" data-name="Combined Shape" d="M14.414,14.707a.293.293,0,1,1,.293.293A.292.292,0,0,1,14.414,14.707ZM.293,15a.293.293,0,1,1,0-.586H5.748a13.643,13.643,0,0,0,1.235-2.621,11.9,11.9,0,0,0,.641-2.516,8.944,8.944,0,0,0-.548-4.519,2.47,2.47,0,0,0-.5.591.405.405,0,0,0-.011.265c.005.034.011.067.013.1a.738.738,0,0,1-.341.7A1.275,1.275,0,0,0,5.9,6.8c-.027.052.054.2.14.355a1.127,1.127,0,0,1,.157.367.913.913,0,0,1-.211.445c-.131.188-.255.366-.177.522a1.056,1.056,0,0,0,.335.345.9.9,0,0,1,.388.472c.177.669.158,1.106-.058,1.337a.509.509,0,0,1-.377.159A2.475,2.475,0,0,1,4.331,9.653a3.858,3.858,0,0,1-.56-2.7,1.689,1.689,0,0,1-.441.13,2.682,2.682,0,0,0-.526.151c-.092.069-.027.294.013.429.008.03.015.055.02.074a1.289,1.289,0,0,1,.022.747c-.111.282-.509,1.2-1.01,1.2A.544.544,0,0,1,1.465,9.5,2.616,2.616,0,0,1,.8,7.56,4.97,4.97,0,0,1,2.478,4.34,5.148,5.148,0,0,1,4.17,3.25c0-.015-.284-.565-.311-.594a2.042,2.042,0,0,0-.321.291L3.487,3a1.059,1.059,0,0,1-.462.275.811.811,0,0,1-.184.022,1.011,1.011,0,0,1-.565-.205.362.362,0,0,0-.183-.074c-.1,0-.137.113-.175.244a1.413,1.413,0,0,1-.047.144.652.652,0,0,1-.306.374,2.33,2.33,0,0,1-.972.3.653.653,0,0,1-.35-.089A.52.52,0,0,1,0,3.515C0,1.612,2.007.585,3.9.585A5.1,5.1,0,0,1,7.446,2.34,5.09,5.09,0,0,1,10.71.069a6.18,6.18,0,0,1,.9-.069,3.724,3.724,0,0,1,2.329.708A2.755,2.755,0,0,1,14.992,2.4a.349.349,0,0,1-.354.407,2.373,2.373,0,0,1-.706-.207,6.552,6.552,0,0,0-2.263-.544,2.752,2.752,0,0,0-.927.153,4.438,4.438,0,0,1,1.372.416,4.111,4.111,0,0,1,2.224,2.426,2.757,2.757,0,0,1-.15,1.985.494.494,0,0,1-.435.313c-.357,0-.8-.437-1.072-.813A1.171,1.171,0,0,1,12.53,5.9c0-.039,0-.084,0-.131.008-.148.018-.316-.085-.4a.326.326,0,0,0-.211-.054l-.094,0-.086,0h-.031a.828.828,0,0,1-.792-.638c-.058-.16-.105-.214-.188-.214a.749.749,0,0,0-.185.039l-.058.016a1.249,1.249,0,0,1-.332.054.582.582,0,0,1-.378-.132,1.794,1.794,0,0,1-.137-.129.7.7,0,0,0-.374-.245,2.454,2.454,0,0,0-.352-.025,2.57,2.57,0,0,0-.511.053,4.482,4.482,0,0,1,.453,1.08c.018.053.031.091.037.106A11.593,11.593,0,0,1,9.728,7.39a11.415,11.415,0,0,1,.118,3.239,8.869,8.869,0,0,1-1.061,3.785h4.75a.293.293,0,1,1,0,.586Zm6.125-.586h1.7c.153-.275.286-.544.408-.821H6.845C6.713,13.863,6.569,14.139,6.419,14.414Zm.7-1.407H8.762a8.411,8.411,0,0,0,.247-.821H7.461C7.359,12.453,7.244,12.73,7.12,13.008ZM7.672,11.6H9.133c.04-.227.074-.457.1-.7H7.887C7.824,11.128,7.751,11.364,7.672,11.6Zm.362-1.289H9.281c.013-.222.021-.459.023-.7H8.168C8.132,9.838,8.087,10.075,8.033,10.312Zm-3.6-3.8a3.622,3.622,0,0,0,.38,2.809,2.194,2.194,0,0,0,1.24.893,1.744,1.744,0,0,0-.09-.752,1.331,1.331,0,0,0-.245-.256l-.012-.011a1.358,1.358,0,0,1-.514-.71A.884.884,0,0,1,5.448,7.8a.706.706,0,0,0,.162-.277.969.969,0,0,0-.1-.2.882.882,0,0,1-.183-.628.978.978,0,0,1,.449-.552,1.087,1.087,0,0,0,.212-.184,1,1,0,0,0,.006-.28v-.01a1.047,1.047,0,0,1,.085-.615,3.024,3.024,0,0,1,.554-.68,1.18,1.18,0,0,1-.261-.483A4.56,4.56,0,0,0,4.432,6.512ZM2.893,4.755a4.463,4.463,0,0,0-1.5,2.779,2.078,2.078,0,0,0,.466,1.527,1.915,1.915,0,0,0,.453-.791,1.289,1.289,0,0,0-.043-.394,1.447,1.447,0,0,1,.014-.915c.139-.284.529-.377.981-.484l.01,0a2.448,2.448,0,0,0,.609-.193A5.158,5.158,0,0,1,6.1,3.363,5.532,5.532,0,0,0,2.893,4.755ZM8.286,8.437c-.01.217-.024.41-.043.587H9.3c-.006-.208-.019-.427-.038-.649Zm-.021-1.17c.016.2.025.4.028.582l.9-.058c-.027-.194-.062-.4-.1-.616Zm3.522-2.785a.913.913,0,0,0,.093.211.716.716,0,0,0,.31.049H12.2a.881.881,0,0,1,.693.236,1.362,1.362,0,0,1,.225.847,1.432,1.432,0,0,0,.045.369,1.743,1.743,0,0,0,.525.544,2.21,2.21,0,0,0,.093-1.526A3.622,3.622,0,0,0,11.84,3.14a3.779,3.779,0,0,0-1.758-.386A4.94,4.94,0,0,0,8.515,3a1.16,1.16,0,0,1,.154.506,3,3,0,0,1,1-.021.755.755,0,0,1,.423.264.811.811,0,0,0,.335.239A.287.287,0,0,0,10.51,4a1.222,1.222,0,0,0,.317-.066,1.105,1.105,0,0,1,.291-.062C11.423,3.874,11.642,4.073,11.787,4.482ZM8.079,6.006c.054.258.094.481.122.679L8.966,6.6c-.053-.216-.118-.45-.193-.695ZM7.7,4.743c.092.243.169.476.232.693l.655-.1c-.1-.276-.211-.563-.334-.853A1.179,1.179,0,0,1,7.7,4.743ZM6.914,3.588A.586.586,0,1,0,7.5,3,.587.587,0,0,0,6.914,3.588ZM1.218,2.1A2.186,2.186,0,0,0,.586,3.488H.6a1.054,1.054,0,0,0,.334-.076L.971,3.4c.192-.067.33-.114.392-.326a.813.813,0,0,1,.472-.626A.726.726,0,0,1,2.077,2.4a.934.934,0,0,1,.517.193.452.452,0,0,0,.243.091c.128,0,.224-.089.368-.235a1.012,1.012,0,0,1,.661-.389.583.583,0,0,1,.181.031c.267.089.407.389.542.678.085.182.132.231.222.231a.959.959,0,0,0,.212-.041l.014,0a5.483,5.483,0,0,1,1.37-.194c.087,0,.171,0,.251.009a1.18,1.18,0,0,1,.228-.183A4.533,4.533,0,0,0,3.9,1.171,3.622,3.622,0,0,0,1.218,2.1ZM10.8.649A4.554,4.554,0,0,0,8.015,2.535l.021.011.021.011A4.784,4.784,0,0,1,9.47,2.2a4.174,4.174,0,0,1,1.436-.649,3.407,3.407,0,0,1,.755-.081,7.1,7.1,0,0,1,2.478.579l.067.025.1.038a2.338,2.338,0,0,0-.726-.94A3.153,3.153,0,0,0,11.606.586,5.535,5.535,0,0,0,10.8.649Z" fill="#5e5e5e"/>
+                                            </svg> Hollidays 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"/>
+                                            </svg>  Travels 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"/>
+                                            </svg>  Meets
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                <g id="tasks" transform="translate(0 0)">
+                                                <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tasks 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tickets 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <h4>More options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="calendar-check" xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V3.281A1.407,1.407,0,0,1,1.406,1.875H2.813V.352A.352.352,0,0,1,3.164,0H3.4A.352.352,0,0,1,3.75.352V1.875H9.375V.352A.352.352,0,0,1,9.726,0h.235a.352.352,0,0,1,.351.352V1.875h1.407a1.406,1.406,0,0,1,1.406,1.407V13.594A1.406,1.406,0,0,1,11.719,15Z" fill="#5e5e5e"/>
+                                            </svg> Booking
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i> 
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"/>
+                                            </svg>  Earnings  <span>NEW</span> 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="bullhorn" xmlns="http://www.w3.org/2000/svg" width="15" height="13.331" viewBox="0 0 15 13.331">
+                                            <path id="Shape" d="M2.648,12.623a.816.816,0,0,1-.208-.344,9.693,9.693,0,0,1-.752-3.946H1.25A1.25,1.25,0,0,1,0,7.082v-2.5a1.25,1.25,0,0,1,1.25-1.25H5.415A12.578,12.578,0,0,0,13.331,0a.833.833,0,0,1,.833.833V5a.833.833,0,1,1,0,1.666v4.166a.833.833,0,0,1-.833.833,12.615,12.615,0,0,0-7.85-3.333.756.756,0,0,0-.287.893.837.837,0,0,1,.11.979c-.135.234-.029.367.7.82a.832.832,0,0,1,.311,1.065,2.143,2.143,0,0,1-1.967,1.242A2.422,2.422,0,0,1,2.648,12.623Z" fill="#5e5e5e"/>
+                                            </svg>   Campaigns 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.288" height="12" viewBox="0 0 10.288 12">
+                                                <g id="percent" transform="translate(0)">
+                                                <path id="Shape" d="M5.144,9.428A2.572,2.572,0,1,1,7.715,12,2.572,2.572,0,0,1,5.144,9.428ZM.162,12a.16.16,0,0,1-.129-.257L9.188.064A.162.162,0,0,1,9.317,0h.809a.161.161,0,0,1,.129.257L1.1,11.936A.157.157,0,0,1,.97,12ZM0,2.571A2.571,2.571,0,1,1,2.572,5.143,2.572,2.572,0,0,1,0,2.571Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg> Discounts
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="file-alt" xmlns="http://www.w3.org/2000/svg" width="11.248" height="15" viewBox="0 0 11.248 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V1.409A1.411,1.411,0,0,1,1.406,0H7.385a1.406,1.406,0,0,1,.993.413L10.835,2.87a1.414,1.414,0,0,1,.413,1v9.727A1.407,1.407,0,0,1,9.842,15Z" fill="#5e5e5e"/>
+                                            </svg> Contracts 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <button class="more">Show All</button>
+                            </div>
+                            <div class="cal-body">
+                                <div class="cal-row btNone">
+                                    <div class="breadcrabp">
+                                        <p>CW 12</p>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>mon <span>22</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>tue <span>23</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>wed <span>24</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p class="org-color">Feast of the Annun.. <span>25</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p>thu <span>26</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div> 
+                                    <div class="c-blk">
+                                        <p>wed <span>27</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                    <div class="c-blk">
+                                        <p>SUN <span>28</span></p>
+                                        <h1>16:00h <span>Free Time</span></h1>
+                                    </div>
+                                </div> 
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>01</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>02</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>03</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal">
+                                        <div class="tmr">
+                                            <p><span>02:00</span> <b>01:30h</b> <span>03:30</span> </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="8" viewBox="0 0 21 8">
+                                                <g id="dark-drag-button" transform="translate(21) rotate(90)">
+                                                  <circle id="Oval" cx="1.5" cy="1.5" r="1.5" transform="translate(0 6)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_4" data-name="Oval Copy 4" cx="1.5" cy="1.5" r="1.5" transform="translate(0 12)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_5" data-name="Oval Copy 5" cx="1.5" cy="1.5" r="1.5" transform="translate(0 18)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_8" data-name="Oval Copy 8" cx="1.5" cy="1.5" r="1.5" transform="translate(5 6)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_2" data-name="Oval Copy 2" cx="1.5" cy="1.5" r="1.5" transform="translate(0)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_9" data-name="Oval Copy 9" cx="1.5" cy="1.5" r="1.5" transform="translate(5)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_7" data-name="Oval Copy 7" cx="1.5" cy="1.5" r="1.5" transform="translate(5 12)" fill="#9cafff"/>
+                                                  <circle id="Oval_Copy_6" data-name="Oval Copy 6" cx="1.5" cy="1.5" r="1.5" transform="translate(5 18)" fill="#9cafff"/>
+                                                </g>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>04</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div> 
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>05</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>06</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>07</p>
+                                    </div>
+                                    <div class="s-cal">  
+                                        <div class="rblk">
+                                            <p><b>Departure</b> <span>07:00 pm</span></p>
+                                            <h4>DXB (Airport Abu Dhabi)</h4>
+                                            <div class="plan">
+                                                <p>06:25 h</p>
+                                                <img src="assets/img/Untitled-1.png" alt="">
+                                            </div>
+                                            <p><b>Arrival</b> <span>07:00 pm</span></p>
+                                            <h4>JFK (Airport New York)</h4>
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>08</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal">
+                                        <div class="tkts">
+                                            <div class="prf">
+                                                <div class="plf">
+                                                    <img src="assets/img/Oval.png" alt="">
+                                                    <img src="assets/img/avatar-icon-tickets.png" class="tkt" alt="">
+                                                </div>
+                                                <p>Tickets <b>Ariana Grande</b> Price: $ 75</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div> 
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>09</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>11</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>12</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal">  
+                                        <div class="rblk al">
+                                            <p>UX/UI - Milestones <span>06:00 pm</span></p> 
+                                            <div class="lc">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                    <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"></path>
+                                                  </svg>
+                                                <p>John F. Kennedy Airport
+                                                    New York 11430, USA</p> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>01</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>02</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>03</p>
+                                    </div> 
+                                    <div class="s-cal">  
+                                        <div class="rblk al">
+                                            <p>Meet Olivia at the airport</p> 
+                                            <div class="lc">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                    <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"></path>
+                                                  </svg>
+                                                <p>John F. Kennedy Airport
+                                                    New York 11430, USA</p> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>04</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div> 
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>05</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>06</p>
+                                    </div>
+                                    <div class="s-cal">  
+                                        <div class="rblk al">
+                                            <p>Meet Olivia at the airport</p> 
+                                            <div class="lc">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                    <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"></path>
+                                                  </svg>
+                                                <p>John F. Kennedy Airport
+                                                    New York 11430, USA</p> 
+                                            </div>
+                                            <div class="b-blks"> 
+                                                <div class="all-users">
+                                                    <ul>
+                                                        <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                                        <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                                        <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                                        <li><span>k</span></li>
+                                                        <li><span style="background: #F9C772;">0</span></li> 
+                                                        <li class="number"><span style="background: var(--bac)">+3</span></li> 
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>07</p>
+                                    </div>
+                                    <div class="s-cal">  
+                                        
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>08</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div> 
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>09</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>11</p>
+                                    </div>
+                                    <div class="s-cal">  
+                                        <div class="rblk pn">
+                                            <p>Buy a gift for the niece. <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.002" viewBox="0 0 15 15.002">
+                                                <path id="Shape" d="M0,14.221l.369-3.343,8.2-8.2L7.969,2.07,4.333,5.712a.353.353,0,0,1-.5,0l-.167-.167a.35.35,0,0,1,0-.5L7.474,1.241a.7.7,0,0,1,.993,0l.774.77L10.7.549a1.877,1.877,0,0,1,2.652,0l1.1,1.1a1.882,1.882,0,0,1,0,2.652L4.127,14.626.781,15A.718.718,0,0,1,.7,15,.7.7,0,0,1,0,14.221Z" transform="translate(0 0)" fill="#8d8d8d"/>
+                                              </svg></p>
+                                        </div>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                                <div class="cal-row-note">
+                                    <div class="breadcrabp">
+                                        <p>12</p>
+                                    </div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                    <div class="s-cal"></div>
+                                </div>
+                            </div>
+                            <div class="cal-right">
+                                <h4>Free Time</h4>
+                                <div class="r-sliders">
+                                    <ul>
+                                        <li>
+                                            <div class="circles-small"> 
+                                                <div class="circle-small">
+                                                    <div class="text">99h</div>
+                                                    <svg>
+                                                        <circle class="bg" cx="80" cy="80" r="37"></circle>
+                                                        <circle class="progress two" cx="40" cy="40" r="30"></circle>
+                                                    </svg>
+                                                </div>
+                                            </div> 
+                                        </li> 
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"></path>
+                                                </svg> <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"></path>
+                                                </svg> <span>7</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                    <g id="tasks" transform="translate(0 0)">
+                                                    <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>5</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                    <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                    <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-conts" data-cont="Day">
+                        <div class="calendar week-cal days-cal"> 
+                            <div class="cal-left">
+                                <h4>Calendar options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Shape" d="M2.579,15a.706.706,0,0,1-.7-.7v-2.6a5.626,5.626,0,0,1,0-8.385V.7a.706.706,0,0,1,.7-.7H8.672a.706.706,0,0,1,.7.7v2.6a5.626,5.626,0,0,1,0,8.385v2.6a.706.706,0,0,1-.7.7Z" fill="#5e5e5e"/>
+                                            </svg> Free Time 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="palm-tree" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                <path id="Combined_Shape" data-name="Combined Shape" d="M14.414,14.707a.293.293,0,1,1,.293.293A.292.292,0,0,1,14.414,14.707ZM.293,15a.293.293,0,1,1,0-.586H5.748a13.643,13.643,0,0,0,1.235-2.621,11.9,11.9,0,0,0,.641-2.516,8.944,8.944,0,0,0-.548-4.519,2.47,2.47,0,0,0-.5.591.405.405,0,0,0-.011.265c.005.034.011.067.013.1a.738.738,0,0,1-.341.7A1.275,1.275,0,0,0,5.9,6.8c-.027.052.054.2.14.355a1.127,1.127,0,0,1,.157.367.913.913,0,0,1-.211.445c-.131.188-.255.366-.177.522a1.056,1.056,0,0,0,.335.345.9.9,0,0,1,.388.472c.177.669.158,1.106-.058,1.337a.509.509,0,0,1-.377.159A2.475,2.475,0,0,1,4.331,9.653a3.858,3.858,0,0,1-.56-2.7,1.689,1.689,0,0,1-.441.13,2.682,2.682,0,0,0-.526.151c-.092.069-.027.294.013.429.008.03.015.055.02.074a1.289,1.289,0,0,1,.022.747c-.111.282-.509,1.2-1.01,1.2A.544.544,0,0,1,1.465,9.5,2.616,2.616,0,0,1,.8,7.56,4.97,4.97,0,0,1,2.478,4.34,5.148,5.148,0,0,1,4.17,3.25c0-.015-.284-.565-.311-.594a2.042,2.042,0,0,0-.321.291L3.487,3a1.059,1.059,0,0,1-.462.275.811.811,0,0,1-.184.022,1.011,1.011,0,0,1-.565-.205.362.362,0,0,0-.183-.074c-.1,0-.137.113-.175.244a1.413,1.413,0,0,1-.047.144.652.652,0,0,1-.306.374,2.33,2.33,0,0,1-.972.3.653.653,0,0,1-.35-.089A.52.52,0,0,1,0,3.515C0,1.612,2.007.585,3.9.585A5.1,5.1,0,0,1,7.446,2.34,5.09,5.09,0,0,1,10.71.069a6.18,6.18,0,0,1,.9-.069,3.724,3.724,0,0,1,2.329.708A2.755,2.755,0,0,1,14.992,2.4a.349.349,0,0,1-.354.407,2.373,2.373,0,0,1-.706-.207,6.552,6.552,0,0,0-2.263-.544,2.752,2.752,0,0,0-.927.153,4.438,4.438,0,0,1,1.372.416,4.111,4.111,0,0,1,2.224,2.426,2.757,2.757,0,0,1-.15,1.985.494.494,0,0,1-.435.313c-.357,0-.8-.437-1.072-.813A1.171,1.171,0,0,1,12.53,5.9c0-.039,0-.084,0-.131.008-.148.018-.316-.085-.4a.326.326,0,0,0-.211-.054l-.094,0-.086,0h-.031a.828.828,0,0,1-.792-.638c-.058-.16-.105-.214-.188-.214a.749.749,0,0,0-.185.039l-.058.016a1.249,1.249,0,0,1-.332.054.582.582,0,0,1-.378-.132,1.794,1.794,0,0,1-.137-.129.7.7,0,0,0-.374-.245,2.454,2.454,0,0,0-.352-.025,2.57,2.57,0,0,0-.511.053,4.482,4.482,0,0,1,.453,1.08c.018.053.031.091.037.106A11.593,11.593,0,0,1,9.728,7.39a11.415,11.415,0,0,1,.118,3.239,8.869,8.869,0,0,1-1.061,3.785h4.75a.293.293,0,1,1,0,.586Zm6.125-.586h1.7c.153-.275.286-.544.408-.821H6.845C6.713,13.863,6.569,14.139,6.419,14.414Zm.7-1.407H8.762a8.411,8.411,0,0,0,.247-.821H7.461C7.359,12.453,7.244,12.73,7.12,13.008ZM7.672,11.6H9.133c.04-.227.074-.457.1-.7H7.887C7.824,11.128,7.751,11.364,7.672,11.6Zm.362-1.289H9.281c.013-.222.021-.459.023-.7H8.168C8.132,9.838,8.087,10.075,8.033,10.312Zm-3.6-3.8a3.622,3.622,0,0,0,.38,2.809,2.194,2.194,0,0,0,1.24.893,1.744,1.744,0,0,0-.09-.752,1.331,1.331,0,0,0-.245-.256l-.012-.011a1.358,1.358,0,0,1-.514-.71A.884.884,0,0,1,5.448,7.8a.706.706,0,0,0,.162-.277.969.969,0,0,0-.1-.2.882.882,0,0,1-.183-.628.978.978,0,0,1,.449-.552,1.087,1.087,0,0,0,.212-.184,1,1,0,0,0,.006-.28v-.01a1.047,1.047,0,0,1,.085-.615,3.024,3.024,0,0,1,.554-.68,1.18,1.18,0,0,1-.261-.483A4.56,4.56,0,0,0,4.432,6.512ZM2.893,4.755a4.463,4.463,0,0,0-1.5,2.779,2.078,2.078,0,0,0,.466,1.527,1.915,1.915,0,0,0,.453-.791,1.289,1.289,0,0,0-.043-.394,1.447,1.447,0,0,1,.014-.915c.139-.284.529-.377.981-.484l.01,0a2.448,2.448,0,0,0,.609-.193A5.158,5.158,0,0,1,6.1,3.363,5.532,5.532,0,0,0,2.893,4.755ZM8.286,8.437c-.01.217-.024.41-.043.587H9.3c-.006-.208-.019-.427-.038-.649Zm-.021-1.17c.016.2.025.4.028.582l.9-.058c-.027-.194-.062-.4-.1-.616Zm3.522-2.785a.913.913,0,0,0,.093.211.716.716,0,0,0,.31.049H12.2a.881.881,0,0,1,.693.236,1.362,1.362,0,0,1,.225.847,1.432,1.432,0,0,0,.045.369,1.743,1.743,0,0,0,.525.544,2.21,2.21,0,0,0,.093-1.526A3.622,3.622,0,0,0,11.84,3.14a3.779,3.779,0,0,0-1.758-.386A4.94,4.94,0,0,0,8.515,3a1.16,1.16,0,0,1,.154.506,3,3,0,0,1,1-.021.755.755,0,0,1,.423.264.811.811,0,0,0,.335.239A.287.287,0,0,0,10.51,4a1.222,1.222,0,0,0,.317-.066,1.105,1.105,0,0,1,.291-.062C11.423,3.874,11.642,4.073,11.787,4.482ZM8.079,6.006c.054.258.094.481.122.679L8.966,6.6c-.053-.216-.118-.45-.193-.695ZM7.7,4.743c.092.243.169.476.232.693l.655-.1c-.1-.276-.211-.563-.334-.853A1.179,1.179,0,0,1,7.7,4.743ZM6.914,3.588A.586.586,0,1,0,7.5,3,.587.587,0,0,0,6.914,3.588ZM1.218,2.1A2.186,2.186,0,0,0,.586,3.488H.6a1.054,1.054,0,0,0,.334-.076L.971,3.4c.192-.067.33-.114.392-.326a.813.813,0,0,1,.472-.626A.726.726,0,0,1,2.077,2.4a.934.934,0,0,1,.517.193.452.452,0,0,0,.243.091c.128,0,.224-.089.368-.235a1.012,1.012,0,0,1,.661-.389.583.583,0,0,1,.181.031c.267.089.407.389.542.678.085.182.132.231.222.231a.959.959,0,0,0,.212-.041l.014,0a5.483,5.483,0,0,1,1.37-.194c.087,0,.171,0,.251.009a1.18,1.18,0,0,1,.228-.183A4.533,4.533,0,0,0,3.9,1.171,3.622,3.622,0,0,0,1.218,2.1ZM10.8.649A4.554,4.554,0,0,0,8.015,2.535l.021.011.021.011A4.784,4.784,0,0,1,9.47,2.2a4.174,4.174,0,0,1,1.436-.649,3.407,3.407,0,0,1,.755-.081,7.1,7.1,0,0,1,2.478.579l.067.025.1.038a2.338,2.338,0,0,0-.726-.94A3.153,3.153,0,0,0,11.606.586,5.535,5.535,0,0,0,10.8.649Z" fill="#5e5e5e"/>
+                                            </svg> Hollidays 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"/>
+                                            </svg>  Travels 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"/>
+                                            </svg>  Meets
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                <g id="tasks" transform="translate(0 0)">
+                                                <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tasks 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg>  Tickets 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <h4>More options</h4>
+                                <ul>
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="calendar-check" xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V3.281A1.407,1.407,0,0,1,1.406,1.875H2.813V.352A.352.352,0,0,1,3.164,0H3.4A.352.352,0,0,1,3.75.352V1.875H9.375V.352A.352.352,0,0,1,9.726,0h.235a.352.352,0,0,1,.351.352V1.875h1.407a1.406,1.406,0,0,1,1.406,1.407V13.594A1.406,1.406,0,0,1,11.719,15Z" fill="#5e5e5e"/>
+                                            </svg> Booking
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i> 
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"/>
+                                            </svg>  Earnings  <span>NEW</span> 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="lf">
+                                            <svg id="bullhorn" xmlns="http://www.w3.org/2000/svg" width="15" height="13.331" viewBox="0 0 15 13.331">
+                                            <path id="Shape" d="M2.648,12.623a.816.816,0,0,1-.208-.344,9.693,9.693,0,0,1-.752-3.946H1.25A1.25,1.25,0,0,1,0,7.082v-2.5a1.25,1.25,0,0,1,1.25-1.25H5.415A12.578,12.578,0,0,0,13.331,0a.833.833,0,0,1,.833.833V5a.833.833,0,1,1,0,1.666v4.166a.833.833,0,0,1-.833.833,12.615,12.615,0,0,0-7.85-3.333.756.756,0,0,0-.287.893.837.837,0,0,1,.11.979c-.135.234-.029.367.7.82a.832.832,0,0,1,.311,1.065,2.143,2.143,0,0,1-1.967,1.242A2.422,2.422,0,0,1,2.648,12.623Z" fill="#5e5e5e"/>
+                                            </svg>   Campaigns 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.288" height="12" viewBox="0 0 10.288 12">
+                                                <g id="percent" transform="translate(0)">
+                                                <path id="Shape" d="M5.144,9.428A2.572,2.572,0,1,1,7.715,12,2.572,2.572,0,0,1,5.144,9.428ZM.162,12a.16.16,0,0,1-.129-.257L9.188.064A.162.162,0,0,1,9.317,0h.809a.161.161,0,0,1,.129.257L1.1,11.936A.157.157,0,0,1,.97,12ZM0,2.571A2.571,2.571,0,1,1,2.572,5.143,2.572,2.572,0,0,1,0,2.571Z" fill="#5e5e5e"/>
+                                                </g>
+                                            </svg> Discounts
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>
+                                    <li> 
+                                        <div class="lf">
+                                            <svg id="file-alt" xmlns="http://www.w3.org/2000/svg" width="11.248" height="15" viewBox="0 0 11.248 15">
+                                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V1.409A1.411,1.411,0,0,1,1.406,0H7.385a1.406,1.406,0,0,1,.993.413L10.835,2.87a1.414,1.414,0,0,1,.413,1v9.727A1.407,1.407,0,0,1,9.842,15Z" fill="#5e5e5e"/>
+                                            </svg> Contracts 
+                                        </div>
+                                        <div class="rt">
+                                            <label class="ckb">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <i class="fal fa-ellipsis-v"></i>
+                                        </div>
+                                    </li>  
+                                </ul>
+                                <button class="more">Show All</button>
+                            </div>
+                            <div class="cal-body">
+                                <div class="rlleft"> 
+                                    <div class="cal-row btNone">
+                                        <div class="breadcrabp">
+                                            <p>CW 12</p>
+                                        </div>
+                                        <div class="c-blk">
+                                            <p>mon <span>01</span></p>
+                                            <h1>16:00h <span>Free Time</span></h1>
+                                        </div> 
+                                    </div> 
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>01</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>02</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>03</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>04</p>
+                                        </div> 
+                                        <div class="s-cal">
+                                            <form action="" class="dragit">
+                                                <label for="drag">
+                                                    Drag here
+                                                    <input type="file" id="drag">
+                                                </label>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>05</p>
+                                        </div> 
+                                        <div class="s-cal"></div>
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>06</p>
+                                        </div> 
+                                        <div class="s-cal"></div>
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>07</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>08</p>
+                                        </div> 
+                                        <div class="s-cal">
+                                            <div class="rblk fls">
+                                                <p>Meet Olivia at the airport <span>03:00h</span></p>
+                                                
+                                                <div class="blk-fl">
+                                                    <div class="lc">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                            <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"></path>
+                                                        </svg>
+                                                        <p>John F. Kennedy Airport
+                                                            New York 11430, USA</p> 
+                                                    </div>
+                                                    <div class="b-blks"> 
+                                                        <div class="all-users">
+                                                            <ul>
+                                                                <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                                                <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                                                <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                                                <li><span>k</span></li>
+                                                                <li><span style="background: #F9C772;">0</span></li> 
+                                                                <li class="number"><span style="background: var(--bac)">+3</span></li> 
+                                                            </ul>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>09</p>
+                                        </div> 
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>10</p>
+                                        </div> 
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>11</p>
+                                        </div> 
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>12</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>01</p>
+                                        </div>
+                                        <div class="s-cal">
+                                            <div class="rblk fls">
+                                                <p>Meet Olivia at the airport <span>03:00h</span></p>
+                                                
+                                                <div class="blk-fl">
+                                                    <div class="lc">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                            <path id="Shape" d="M5.047,14.7C.79,8.527,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072a.7.7,0,0,1-1.156,0Z" fill="#8d8d8d"></path>
+                                                        </svg>
+                                                        <p>John F. Kennedy Airport
+                                                            New York 11430, USA</p> 
+                                                    </div>
+                                                    <div class="b-blks"> 
+                                                        <p>open in maps</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>02</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>03</p>
+                                        </div>  
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>04</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div> 
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>05</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>06</p>
+                                        </div>
+                                        <div class="s-cal">   </div> 
+                                        
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>07</p>
+                                        </div>
+                                        <div class="s-cal">
+                                            <div class="tkts lastss">
+                                                <div class="prf">
+                                                    <div class="plf">
+                                                        <img src="assets/img/Oval.png" alt="">
+                                                        <img src="assets/img/avatar-icon-tickets.png" class="tkt" alt="">
+                                                    </div>
+                                                    <p>Tickets Presale <span class="fts">Price: $75,00</span> <br> <b style="display: inline-block;">Ariana Grande - Open Air Show</b> <span>buy now</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>08</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div> 
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>09</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>10</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>11</p>
+                                        </div>
+                                        <div class="s-cal">   </div> 
+                                    </div>
+                                    <div class="cal-row-note">
+                                        <div class="breadcrabp">
+                                            <p>12</p>
+                                        </div>
+                                        <div class="s-cal"></div> 
+                                    </div>
+                                </div>
+                                <div class="rright">
+                                    <h3>Use your free time and fill the day with bright events or be a hero and make your day as productive as possible.</h3>
+                                    <div class="inner-tab">
+                                        <ul>
+                                            <li><a href="" data-menu="All">All activities</a></li>
+                                            <li><a href="" class="active" data-menu="Tickets">Tickets</a></li>
+                                            <li><a href="" data-menu="To">To-Do’s</a></li>
+                                            <li><a href="" data-menu="Travels">Travels</a></li>
+                                            <li><a href="" data-menu="Meets">Meets</a></li>
+                                        </ul>
+                                    </div>  
+                                    <div class="inner-all-cons">
+                                        <div class="sssingle-conts" data-cont="All"></div>
+                                        <div class="sssingle-conts active" data-cont="Tickets">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="ip-blk">
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <div class="upl">
+                                                                    <div class="p-blk">
+                                                                        <div class="blk-plf"> 
+                                                                            <h4>Design Conference San Fr..</h4>
+                                                                            <ul>
+                                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                                </svg> 05:00 pm</li>
+                                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                                </svg> $25,00</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="blk-prt">
+                                                                            <img src="assets/img/Oval.png" alt="">
+                                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <div class="rt-texts">
+                                                                    <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                        <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                    </svg></div>
+                                                                    <h4>Use drag and drop to add an event to your calendar.</h4>
+                                                                    <div class="hand"><svg xmlns="http://www.w3.org/2000/svg" width="60.67" height="60.529" viewBox="0 0 60.67 60.529">
+                                                                        <path id="Shape" d="M14.286,45.715a2.858,2.858,0,0,1-2.858-2.857V37.143A2.856,2.856,0,0,1,12.809,34.7c-.9-1.612-4.409-4.451-5.995-5.44C4.809,28.018,0,27.192,0,22.857a6.307,6.307,0,0,1,6.286-6.572,9.675,9.675,0,0,1,4,.875V6.286A6.4,6.4,0,0,1,16.572,0a6.34,6.34,0,0,1,6.286,6.286v5.073l.094,0a7.3,7.3,0,0,1,3.534,1.061,7.165,7.165,0,0,1,5.848,1.485C36.778,13.763,40,16.5,40,21.821V23.9c0,4.831-3.06,8.077-3.753,11.17a2.848,2.848,0,0,1,.9,2.077v5.714a2.858,2.858,0,0,1-2.858,2.857Z" transform="matrix(0.695, -0.719, 0.719, 0.695, 0, 28.773)" fill="#fff"/>
+                                                                    </svg></div>
+                                                                    <a href="#" class="gotit">I got it</a>  
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="p-blk btms">
+                                                        <div class="blk-plf"> 
+                                                            <h4>Design Conference San Fr..</h4>
+                                                            <ul>
+                                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                                                                </svg> 05:00 pm</li>
+                                                                <li><svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                                                    <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                                                                </svg> $25,00</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blk-prt">
+                                                            <img src="assets/img/Oval.png" alt="">
+                                                            <img class="smp" src="assets/img/avatar-icon-tickets.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sssingle-conts" data-cont="To"></div>
+                                        <div class="sssingle-conts" data-cont="Travels"></div>
+                                        <div class="sssingle-conts" data-cont="Meets"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cal-right">
+                                <h4>Free Time</h4>
+                                <div class="r-sliders">
+                                    <ul>
+                                        <li>
+                                            <div class="circles-small"> 
+                                                <div class="circle-small">
+                                                    <div class="text">99h</div>
+                                                    <svg>
+                                                        <circle class="bg" cx="80" cy="80" r="37"></circle>
+                                                        <circle class="progress two" cx="40" cy="40" r="30"></circle>
+                                                    </svg>
+                                                </div>
+                                            </div> 
+                                        </li> 
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"></path>
+                                                </svg> <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"></path>
+                                                </svg> <span>7</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                                    <g id="tasks" transform="translate(0 0)">
+                                                    <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>5</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                                    <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                                    <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"></path>
+                                                    </g>
+                                                </svg> <span>1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Info-area END -->
+        
+        <!-- calender-bar START -->
+        <div class="calender-bar">
+            <a href="#" class="cal-logo"> <img src="assets/img/logo.png" alt=""> <i class="fal fa-times"></i> </a> 
+            <div class="cal-left">
+                <h4>Calendar options</h4>
+                <ul>
+                    <li>
+                        <div class="lf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                <path id="Shape" d="M2.579,15a.706.706,0,0,1-.7-.7v-2.6a5.626,5.626,0,0,1,0-8.385V.7a.706.706,0,0,1,.7-.7H8.672a.706.706,0,0,1,.7.7v2.6a5.626,5.626,0,0,1,0,8.385v2.6a.706.706,0,0,1-.7.7Z" fill="#5e5e5e"></path>
+                            </svg> Free Time 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li> 
+                    <li> 
+                        <div class="lf">
+                            <svg id="palm-tree" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <path id="Combined_Shape" data-name="Combined Shape" d="M14.414,14.707a.293.293,0,1,1,.293.293A.292.292,0,0,1,14.414,14.707ZM.293,15a.293.293,0,1,1,0-.586H5.748a13.643,13.643,0,0,0,1.235-2.621,11.9,11.9,0,0,0,.641-2.516,8.944,8.944,0,0,0-.548-4.519,2.47,2.47,0,0,0-.5.591.405.405,0,0,0-.011.265c.005.034.011.067.013.1a.738.738,0,0,1-.341.7A1.275,1.275,0,0,0,5.9,6.8c-.027.052.054.2.14.355a1.127,1.127,0,0,1,.157.367.913.913,0,0,1-.211.445c-.131.188-.255.366-.177.522a1.056,1.056,0,0,0,.335.345.9.9,0,0,1,.388.472c.177.669.158,1.106-.058,1.337a.509.509,0,0,1-.377.159A2.475,2.475,0,0,1,4.331,9.653a3.858,3.858,0,0,1-.56-2.7,1.689,1.689,0,0,1-.441.13,2.682,2.682,0,0,0-.526.151c-.092.069-.027.294.013.429.008.03.015.055.02.074a1.289,1.289,0,0,1,.022.747c-.111.282-.509,1.2-1.01,1.2A.544.544,0,0,1,1.465,9.5,2.616,2.616,0,0,1,.8,7.56,4.97,4.97,0,0,1,2.478,4.34,5.148,5.148,0,0,1,4.17,3.25c0-.015-.284-.565-.311-.594a2.042,2.042,0,0,0-.321.291L3.487,3a1.059,1.059,0,0,1-.462.275.811.811,0,0,1-.184.022,1.011,1.011,0,0,1-.565-.205.362.362,0,0,0-.183-.074c-.1,0-.137.113-.175.244a1.413,1.413,0,0,1-.047.144.652.652,0,0,1-.306.374,2.33,2.33,0,0,1-.972.3.653.653,0,0,1-.35-.089A.52.52,0,0,1,0,3.515C0,1.612,2.007.585,3.9.585A5.1,5.1,0,0,1,7.446,2.34,5.09,5.09,0,0,1,10.71.069a6.18,6.18,0,0,1,.9-.069,3.724,3.724,0,0,1,2.329.708A2.755,2.755,0,0,1,14.992,2.4a.349.349,0,0,1-.354.407,2.373,2.373,0,0,1-.706-.207,6.552,6.552,0,0,0-2.263-.544,2.752,2.752,0,0,0-.927.153,4.438,4.438,0,0,1,1.372.416,4.111,4.111,0,0,1,2.224,2.426,2.757,2.757,0,0,1-.15,1.985.494.494,0,0,1-.435.313c-.357,0-.8-.437-1.072-.813A1.171,1.171,0,0,1,12.53,5.9c0-.039,0-.084,0-.131.008-.148.018-.316-.085-.4a.326.326,0,0,0-.211-.054l-.094,0-.086,0h-.031a.828.828,0,0,1-.792-.638c-.058-.16-.105-.214-.188-.214a.749.749,0,0,0-.185.039l-.058.016a1.249,1.249,0,0,1-.332.054.582.582,0,0,1-.378-.132,1.794,1.794,0,0,1-.137-.129.7.7,0,0,0-.374-.245,2.454,2.454,0,0,0-.352-.025,2.57,2.57,0,0,0-.511.053,4.482,4.482,0,0,1,.453,1.08c.018.053.031.091.037.106A11.593,11.593,0,0,1,9.728,7.39a11.415,11.415,0,0,1,.118,3.239,8.869,8.869,0,0,1-1.061,3.785h4.75a.293.293,0,1,1,0,.586Zm6.125-.586h1.7c.153-.275.286-.544.408-.821H6.845C6.713,13.863,6.569,14.139,6.419,14.414Zm.7-1.407H8.762a8.411,8.411,0,0,0,.247-.821H7.461C7.359,12.453,7.244,12.73,7.12,13.008ZM7.672,11.6H9.133c.04-.227.074-.457.1-.7H7.887C7.824,11.128,7.751,11.364,7.672,11.6Zm.362-1.289H9.281c.013-.222.021-.459.023-.7H8.168C8.132,9.838,8.087,10.075,8.033,10.312Zm-3.6-3.8a3.622,3.622,0,0,0,.38,2.809,2.194,2.194,0,0,0,1.24.893,1.744,1.744,0,0,0-.09-.752,1.331,1.331,0,0,0-.245-.256l-.012-.011a1.358,1.358,0,0,1-.514-.71A.884.884,0,0,1,5.448,7.8a.706.706,0,0,0,.162-.277.969.969,0,0,0-.1-.2.882.882,0,0,1-.183-.628.978.978,0,0,1,.449-.552,1.087,1.087,0,0,0,.212-.184,1,1,0,0,0,.006-.28v-.01a1.047,1.047,0,0,1,.085-.615,3.024,3.024,0,0,1,.554-.68,1.18,1.18,0,0,1-.261-.483A4.56,4.56,0,0,0,4.432,6.512ZM2.893,4.755a4.463,4.463,0,0,0-1.5,2.779,2.078,2.078,0,0,0,.466,1.527,1.915,1.915,0,0,0,.453-.791,1.289,1.289,0,0,0-.043-.394,1.447,1.447,0,0,1,.014-.915c.139-.284.529-.377.981-.484l.01,0a2.448,2.448,0,0,0,.609-.193A5.158,5.158,0,0,1,6.1,3.363,5.532,5.532,0,0,0,2.893,4.755ZM8.286,8.437c-.01.217-.024.41-.043.587H9.3c-.006-.208-.019-.427-.038-.649Zm-.021-1.17c.016.2.025.4.028.582l.9-.058c-.027-.194-.062-.4-.1-.616Zm3.522-2.785a.913.913,0,0,0,.093.211.716.716,0,0,0,.31.049H12.2a.881.881,0,0,1,.693.236,1.362,1.362,0,0,1,.225.847,1.432,1.432,0,0,0,.045.369,1.743,1.743,0,0,0,.525.544,2.21,2.21,0,0,0,.093-1.526A3.622,3.622,0,0,0,11.84,3.14a3.779,3.779,0,0,0-1.758-.386A4.94,4.94,0,0,0,8.515,3a1.16,1.16,0,0,1,.154.506,3,3,0,0,1,1-.021.755.755,0,0,1,.423.264.811.811,0,0,0,.335.239A.287.287,0,0,0,10.51,4a1.222,1.222,0,0,0,.317-.066,1.105,1.105,0,0,1,.291-.062C11.423,3.874,11.642,4.073,11.787,4.482ZM8.079,6.006c.054.258.094.481.122.679L8.966,6.6c-.053-.216-.118-.45-.193-.695ZM7.7,4.743c.092.243.169.476.232.693l.655-.1c-.1-.276-.211-.563-.334-.853A1.179,1.179,0,0,1,7.7,4.743ZM6.914,3.588A.586.586,0,1,0,7.5,3,.587.587,0,0,0,6.914,3.588ZM1.218,2.1A2.186,2.186,0,0,0,.586,3.488H.6a1.054,1.054,0,0,0,.334-.076L.971,3.4c.192-.067.33-.114.392-.326a.813.813,0,0,1,.472-.626A.726.726,0,0,1,2.077,2.4a.934.934,0,0,1,.517.193.452.452,0,0,0,.243.091c.128,0,.224-.089.368-.235a1.012,1.012,0,0,1,.661-.389.583.583,0,0,1,.181.031c.267.089.407.389.542.678.085.182.132.231.222.231a.959.959,0,0,0,.212-.041l.014,0a5.483,5.483,0,0,1,1.37-.194c.087,0,.171,0,.251.009a1.18,1.18,0,0,1,.228-.183A4.533,4.533,0,0,0,3.9,1.171,3.622,3.622,0,0,0,1.218,2.1ZM10.8.649A4.554,4.554,0,0,0,8.015,2.535l.021.011.021.011A4.784,4.784,0,0,1,9.47,2.2a4.174,4.174,0,0,1,1.436-.649,3.407,3.407,0,0,1,.755-.081,7.1,7.1,0,0,1,2.478.579l.067.025.1.038a2.338,2.338,0,0,0-.726-.94A3.153,3.153,0,0,0,11.606.586,5.535,5.535,0,0,0,10.8.649Z" fill="#5e5e5e"></path>
+                            </svg> Hollidays 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                                <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"></path>
+                            </svg>  Travels 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                                <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"></path>
+                            </svg>  Meets
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                                <g id="tasks" transform="translate(0 0)">
+                                <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"></path>
+                                </g>
+                            </svg>  Tasks 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                                <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                                <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"></path>
+                                </g>
+                            </svg>  Tickets 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>  
+                </ul>
+                <h4>More options</h4>
+                <ul>
+                    <li>
+                        <div class="lf">
+                            <svg id="calendar-check" xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V3.281A1.407,1.407,0,0,1,1.406,1.875H2.813V.352A.352.352,0,0,1,3.164,0H3.4A.352.352,0,0,1,3.75.352V1.875H9.375V.352A.352.352,0,0,1,9.726,0h.235a.352.352,0,0,1,.351.352V1.875h1.407a1.406,1.406,0,0,1,1.406,1.407V13.594A1.406,1.406,0,0,1,11.719,15Z" fill="#5e5e5e"></path>
+                            </svg> Booking
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i> 
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="lf">
+                            <svg id="coins" xmlns="http://www.w3.org/2000/svg" width="15" height="13.125" viewBox="0 0 15 13.125">
+                                <path id="Shape" d="M0,10.781V5.156c0-1.307,2.229-2.22,4.687-2.323v-.49C4.687,1.3,6.17.7,6.2.686A9.119,9.119,0,0,1,9.843,0C13.181,0,15,1.26,15,2.344V7.969c0,1.222-2.06,2.224-4.688,2.332v.481c0,1.3-2.309,2.344-5.156,2.344S0,12.076,0,10.781Z" fill="#5e5e5e"></path>
+                            </svg>  Earnings  <span>NEW</span> 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="lf">
+                            <svg id="bullhorn" xmlns="http://www.w3.org/2000/svg" width="15" height="13.331" viewBox="0 0 15 13.331">
+                            <path id="Shape" d="M2.648,12.623a.816.816,0,0,1-.208-.344,9.693,9.693,0,0,1-.752-3.946H1.25A1.25,1.25,0,0,1,0,7.082v-2.5a1.25,1.25,0,0,1,1.25-1.25H5.415A12.578,12.578,0,0,0,13.331,0a.833.833,0,0,1,.833.833V5a.833.833,0,1,1,0,1.666v4.166a.833.833,0,0,1-.833.833,12.615,12.615,0,0,0-7.85-3.333.756.756,0,0,0-.287.893.837.837,0,0,1,.11.979c-.135.234-.029.367.7.82a.832.832,0,0,1,.311,1.065,2.143,2.143,0,0,1-1.967,1.242A2.422,2.422,0,0,1,2.648,12.623Z" fill="#5e5e5e"></path>
+                            </svg>   Campaigns 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.288" height="12" viewBox="0 0 10.288 12">
+                                <g id="percent" transform="translate(0)">
+                                <path id="Shape" d="M5.144,9.428A2.572,2.572,0,1,1,7.715,12,2.572,2.572,0,0,1,5.144,9.428ZM.162,12a.16.16,0,0,1-.129-.257L9.188.064A.162.162,0,0,1,9.317,0h.809a.161.161,0,0,1,.129.257L1.1,11.936A.157.157,0,0,1,.97,12ZM0,2.571A2.571,2.571,0,1,1,2.572,5.143,2.572,2.572,0,0,1,0,2.571Z" fill="#5e5e5e"></path>
+                                </g>
+                            </svg> Discounts
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="lf">
+                            <svg id="file-alt" xmlns="http://www.w3.org/2000/svg" width="11.248" height="15" viewBox="0 0 11.248 15">
+                                <path id="Shape" d="M1.406,15A1.407,1.407,0,0,1,0,13.594V1.409A1.411,1.411,0,0,1,1.406,0H7.385a1.406,1.406,0,0,1,.993.413L10.835,2.87a1.414,1.414,0,0,1,.413,1v9.727A1.407,1.407,0,0,1,9.842,15Z" fill="#5e5e5e"></path>
+                            </svg> Contracts 
+                        </div>
+                        <div class="rt">
+                            <label class="ckb">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> 
+                            <i class="fal fa-ellipsis-v"></i>
+                        </div>
+                    </li>  
+                </ul>
+                <button class="more">Show All</button>
+            </div>
+            <div class="cal-right">
+                <h4>Free Time</h4>
+                <div class="r-sliders">
+                    <ul>
+                        <li class="firstOne">
+                            <div class="prog">99h</div>
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20.064" height="19.982" viewBox="0 0 20.064 19.982">
+                            <path id="Shape" d="M4.124,13.333a.416.416,0,0,1-.4-.531L5,8.333H3.334l-1.125,1.5A.417.417,0,0,1,1.875,10H.417a.417.417,0,0,1-.4-.517L.833,6.666.013,3.851a.417.417,0,0,1,.4-.518H1.875a.417.417,0,0,1,.334.167L3.334,5H5L3.723.531A.416.416,0,0,1,4.124,0h2.3a.418.418,0,0,1,.362.21L9.524,5H12.5c.921,0,2.5.746,2.5,1.666s-1.58,1.667-2.5,1.667H9.524L6.786,13.124a.415.415,0,0,1-.361.21Z" transform="translate(0 10.23) rotate(-43)" fill="#5e5e5e"></path>
+                        </svg> <span>3</span></li>
+                        <li><svg id="users" xmlns="http://www.w3.org/2000/svg" width="15" height="10.5" viewBox="0 0 15 10.5">
+                            <path id="Shape" d="M4.125,10.5A1.125,1.125,0,0,1,3,9.375V8.325a2.683,2.683,0,0,1,.46-1.507,2.582,2.582,0,0,1,2.163-1.1C6.405,5.719,6.6,6,7.5,6s1.094-.282,1.877-.282a2.582,2.582,0,0,1,2.164,1.1A2.683,2.683,0,0,1,12,8.325v1.05A1.125,1.125,0,0,1,10.875,10.5ZM14.25,7.125A1.083,1.083,0,0,0,13.218,6h-.937a.93.93,0,0,0-.368.077,3.181,3.181,0,0,0-.595-.526,1.693,1.693,0,0,1,.963-.3h.937A1.833,1.833,0,0,1,15,7.125a.375.375,0,0,1-.751,0ZM0,7.125A1.832,1.832,0,0,1,1.781,5.25h.938a1.706,1.706,0,0,1,.963.3,3.239,3.239,0,0,0-.595.526A.93.93,0,0,0,2.719,6H1.781A1.083,1.083,0,0,0,.75,7.125a.375.375,0,0,1-.75,0Zm4.875-4.5A2.625,2.625,0,1,1,7.5,5.25,2.623,2.623,0,0,1,4.875,2.625Zm6,0A1.875,1.875,0,1,1,12.75,4.5,1.876,1.876,0,0,1,10.875,2.625Zm-10.5,0A1.875,1.875,0,1,1,2.25,4.5,1.875,1.875,0,0,1,.375,2.625Z" fill="#5e5e5e"></path>
+                        </svg> <span>7</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12.185" viewBox="0 0 15 12.185">
+                            <g id="tasks" transform="translate(0 0)">
+                            <path id="Shape" d="M.952,11.131a1.049,1.049,0,1,1,1.055,1.054A1.054,1.054,0,0,1,.952,11.131Zm4.851.644a.176.176,0,0,1-.175-.176v-.7a.176.176,0,0,1,.175-.175h9.021A.176.176,0,0,1,15,10.9v.7a.177.177,0,0,1-.176.176ZM1.711,8.334.121,6.743a.351.351,0,0,1,0-.5l.255-.26a.353.353,0,0,1,.5,0L2,7.109,4.306,4.79a.351.351,0,0,1,.5,0l.217.217a.357.357,0,0,1,0,.5L2.2,8.328l.006.006a.353.353,0,0,1-.5,0ZM5.8,7.088a.175.175,0,0,1-.175-.176v-.7A.176.176,0,0,1,5.8,6.035h9.021A.176.176,0,0,1,15,6.21v.7a.176.176,0,0,1-.176.176ZM1.694,3.648.1,2.056a.351.351,0,0,1,0-.5l.26-.26a.353.353,0,0,1,.5,0L1.986,2.423,4.295.1a.351.351,0,0,1,.5,0L5.009.32a.352.352,0,0,1,0,.5L2.2,3.641l-.006.006a.351.351,0,0,1-.5,0ZM5.8,2.4a.175.175,0,0,1-.175-.175v-.7A.176.176,0,0,1,5.8,1.348h9.021A.176.176,0,0,1,15,1.524v.7a.176.176,0,0,1-.176.175Z" fill="#5e5e5e"></path>
+                            </g>
+                        </svg> <span>5</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                            <g id="ticket-alt" transform="translate(-0.661 -0.161)">
+                            <path id="Shape" d="M1.25,10A1.25,1.25,0,0,1,0,8.75V5.833H.833a.833.833,0,1,0,0-1.666H0V1.25A1.25,1.25,0,0,1,1.25,0h12.5A1.25,1.25,0,0,1,15,1.25V4.167h-.833a.833.833,0,1,0,0,1.666H15V8.75A1.25,1.25,0,0,1,13.75,10Z" transform="translate(0.661 10.768) rotate(-45)" fill="#5e5e5e"></path>
+                            </g>
+                        </svg> <span>1</span></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- calender-bar END -->
+
+
+
+        <!-- Footer-area START -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-contents sec">
+                            <div class="deadlines">
+                                <h4>Deadline <span>Calendar Widget</span></h4>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                            <p class="month">TODAY</p> 
+                            <div class="progr">
+                                <div class="prleft">
+                                    <img class="leftss" src="assets/img/stc.png" alt="">
+                                    <span>Sleep Time 8 hours</span>
+                                    <img class="rightsss" src="assets/img/dark-drag-button.png" alt="">
+                                    <img class="mrrightsss" src="assets/img/gr.png" alt="">
+                                </div>
+                            </div>
+                            <div class="deadlines rtd">
+                                <div class="dls"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M2.474,13.067a.364.364,0,0,1-.014-.527l.214-.213a.362.362,0,0,1,.5-.014A6.472,6.472,0,1,0,1.745,4.536H4.718a.363.363,0,0,1,.363.364v.3a.363.363,0,0,1-.363.363H.363A.363.363,0,0,1,0,5.2V.847A.363.363,0,0,1,.363.484h.3a.362.362,0,0,1,.363.363V3.708a7.5,7.5,0,1,1,1.446,9.359ZM9.583,10.1,7.016,8.231V3.266A.362.362,0,0,1,7.379,2.9h.242a.363.363,0,0,1,.363.363V7.737l2.168,1.578a.362.362,0,0,1,.08.507l-.142.2a.363.363,0,0,1-.507.08Z" transform="translate(0 0)" fill="#737373"/>
+                                  </svg></div>
+                                  <h4> History</h4>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-area END -->
+ 
+    
+		<!-- JS here --> 
+        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

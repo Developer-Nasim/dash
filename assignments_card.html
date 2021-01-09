@@ -1,0 +1,565 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Assignments Cards</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
+        <link rel="stylesheet" href="assets/css/nice-select.css">  
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+        <!-- header-area START -->
+        <div class="header-area" id="header">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="col-lg-2 col-8">
+                        <div class="logo-area bar">
+                            <a href="#" class="menu bar-icon siteBar-btn mtn">  
+                                <span></span>  
+                                <!-- <i class="fal fa-bars"></i> -->
+                            </a>
+                            <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="menu-area">
+                            <nav>
+                                <ul id="nav">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="contact.html">Contacts</a></li> 
+                                    <li><a class="active" href="assignments.html">Assignments</a></li> 
+                                    <li><a href="todo.html">To-Do Board</a></li> 
+                                    <li><a href="calender.html">Calendar</a></li>    
+                                    <li><a href="resource.html">Resources</a></li>    
+                                    <li><a href="permissions">Permissions</a></li>    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-4 text-right">
+                        <div class="header_action"> 
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                </svg>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                                    <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                </svg> 
+                                </li>  
+                                <li class="user">
+                                    <img src="assets/img/user.png" alt="">
+                                    <span><i class="fal fa-angle-down"></i></span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                          <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                        </svg> General Settings</a></li>
+                                        <li><a href="#"><svg id="money-check" xmlns="http://www.w3.org/2000/svg" width="13" height="9.1" viewBox="0 0 13 9.1">
+                                          <path id="Shape" d="M.65,9.1A.65.65,0,0,1,0,8.45V.325A.325.325,0,0,1,.325,0h12.35A.325.325,0,0,1,13,.325V8.45a.65.65,0,0,1-.65.65Z" fill="#fff"/>
+                                        </svg>  Invoice Settings</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Import</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.8" viewBox="0 0 14 9.8">
+                                          <path id="Shape" d="M3.15,9.8A3.15,3.15,0,0,1,2.1,3.679a3.85,3.85,0,0,1,7-2.043A2.424,2.424,0,0,1,10.15,1.4a2.449,2.449,0,0,1,2.355,3.123A2.8,2.8,0,0,1,11.2,9.8Z" fill="#fff"/>
+                                          </svg> Contact-Export</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                          <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"/>
+                                        </svg>  Support Requests</a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10.285" viewBox="0 0 12 10.285">
+                                          <path id="Shape" d="M.321,10.285A.323.323,0,0,1,0,9.964V.321A.323.323,0,0,1,.321,0h.75a.323.323,0,0,1,.322.321V9.964a.323.323,0,0,1-.322.321Zm7.154-.951-.525-.525a.318.318,0,0,1,.005-.458l2.6-2.509H2.893a.323.323,0,0,1-.321-.321V4.77a.323.323,0,0,1,.321-.321H9.556L6.956,1.94a.322.322,0,0,1-.005-.458L7.475.956A.318.318,0,0,1,7.931.95l3.974,3.965a.322.322,0,0,1,0,.455L7.931,9.334a.322.322,0,0,1-.455,0Z" fill="#fff"/>
+                                        </svg>  Logout</a></li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                            <div class="bar">
+                                <a class="bar-icon mmenus siteBar-btn" href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu START -->
+        <div class="mobile-menu left-menu">
+            <div class="top-bars">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                <a href="javascript:void(0)" class="bars siteBar-btn mtn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <rect id="cross" width="14" height="14" fill="gray"/>
+                    </svg> </a>  
+            </div>
+            <div class="side_bar">
+                <a href="#" class="addd">click here to add section</a>
+                <ul>
+                    <h4>SECTION TITLE</h4>
+                    <li><a href="">Enterprise Dashboard</a> <span class="badg">new</span></li>
+                    <li class="active"><a href="">CRM+Edition</a> <span class="badg number">+247</span></li>
+                    <li><a href="">ERP System</a></li>
+                    <li><a href="">Communication</a></li>
+                    <li><a href="">Reporting</a> <a href=""><span class="spean"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <g id="sync-alt" transform="translate(0 -16)">
+                            <path id="Shape" d="M1.855,10.338.991,11.2A.58.58,0,0,1,0,10.792V7.548a.581.581,0,0,1,.581-.581H3.824a.58.58,0,0,1,.41.991L3.225,8.969A4.066,4.066,0,0,0,9.942,7a.291.291,0,0,1,.282-.221H11.61a.29.29,0,0,1,.286.343A6,6,0,0,1,1.855,10.338ZM.39,5.225A.29.29,0,0,1,.1,4.883,6,6,0,0,1,10.145,1.661L11.009.8A.581.581,0,0,1,12,1.209V4.451a.58.58,0,0,1-.581.58H8.176a.581.581,0,0,1-.41-.991l1.011-1.01A4.067,4.067,0,0,0,2.057,5a.29.29,0,0,1-.282.221Z" transform="translate(0 16)" fill="#30acda"/>
+                        </g>
+                        </svg> </span></a></li>
+                </ul>
+                <ul>
+                    <h4>MORE PRODUCTS </h4>
+                    <li><a href="">Document Builder</a></li>
+                    <li><a href="">Selling Points</a></li>
+                    <li><a href="">Articles Management</a></li>
+                    <li><a href="">Team</a> <span class="badg numblu">+5</span></li>
+                    <li><a href="">Target Groups</a></li> 
+                </ul>
+                <ul>
+                    <h4>SUPPORT</h4>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Documentation</a></li> 
+                </ul>
+            </div>
+        </div> 
+        <!-- mobile-menu START -->
+        <div class="mobile-menu right-menu">
+            <div class="top-bars">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                <a href="javascript:void(0)" class="bars siteBar-btn mmenus"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <rect id="cross" width="14" height="14" fill="gray"/>
+                    </svg> </a>  
+            </div>
+            <div class="side_bar">
+                <a href="#" class="addd">click here to add section</a>
+                <ul class="nts">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"></path>
+                    </svg>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                    </svg> 
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="13.125" height="15" viewBox="0 0 13.125 15">
+                        <path id="Shape" d="M4.687,13.125H1.408a1.407,1.407,0,0,1-.995-2.4c.652-.652,1.462-1.463,1.462-4.631A4.689,4.689,0,0,1,5.791,1.47a.937.937,0,1,1,1.543,0A4.689,4.689,0,0,1,11.25,6.094c0,3.167.81,3.979,1.462,4.631a1.407,1.407,0,0,1-.995,2.4H8.438a1.875,1.875,0,1,1-3.75,0Z" fill="#8d8d8d"></path>
+                    </svg> 
+                    </li>  
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <path id="Shape" d="M0,7.5A7.5,7.5,0,1,1,7.5,15,7.5,7.5,0,0,1,0,7.5Z" fill="#8d8d8d"></path>
+                    </svg> 
+                    </li>   
+                </ul>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contacts</a></li> 
+                    <li><a href="assignment.html">Assignments</a></li> 
+                    <li class="active"><a href="todo.html">To-Do Board</a></li> 
+                    <li><a href="calender.html">Calendar</a></li>    
+                    <li><a href="resource.html">Resources</a></li>    
+                    <li><a href="permissions">Permissions</a></li>    
+                </ul>
+            </div>
+        </div> 
+        <!-- header-area END -->
+         
+        <!-- filter-area START -->
+        <div class="filter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="Search...">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <path id="Shape" d="M14.108,14.9l-3.779-3.779a.364.364,0,0,1-.1-.249v-.3a6.159,6.159,0,1,1,.34-.343h.3a.348.348,0,0,1,.249.1L14.9,14.108a.353.353,0,0,1,0,.5l-.29.29a.353.353,0,0,1-.5,0Z" fill="#8d8d8d"/>
+                                  </svg>
+                                </span>
+                            </form> 
+                            <div class="filer">
+                                <div class="with_menu">
+                                    <a href="#" class="with_menu"><i class="fas fa-filter"></i><span>1</span> </a> 
+                                    <ul>
+                                        <li><a href="">Latest</a></li>
+                                        <li><a href="">oldest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-area">
+                            <div class="tab">
+                                <ul>
+                                    <li><a class="active" href="" data-menu="All">All</a></li>
+                                    <li><a href="" data-menu="Open">Open</a></li>
+                                    <li><a href="" data-menu="Finished">Finished</a></li>
+                                </ul>
+                            </div>
+                            <div class="all-users">
+                                <ul>
+                                    <li><img src="assets/img/1.png" alt=""><span>a</span></li>
+                                    <li><img src="assets/img/2.png" alt=""><span>b</span></li>
+                                    <li><img src="assets/img/3.png" alt=""><span>c</span></li>
+                                    <li><span>k</span></li>
+                                    <li><span style="background: #F9C772;">0</span></li>
+                                    <li class="blank"></li>
+                                    <li class="number"><span style="background: var(--bac)">+3</span></li>
+                                    <li class="setting"><svg id="cog" xmlns="http://www.w3.org/2000/svg" width="16" height="16.621" viewBox="0 0 16 16.621">
+                                        <path id="Shape" d="M6.077,16.4a.806.806,0,0,1-.619-.783V14.354a6.5,6.5,0,0,1-1.419-.82l-1.091.63a.8.8,0,0,1-.986-.144A8.29,8.29,0,0,1,.033,10.683.8.8,0,0,1,.4,9.761L1.5,9.13a6.57,6.57,0,0,1,0-1.639L.4,6.861a.8.8,0,0,1-.37-.922A8.287,8.287,0,0,1,1.961,2.6a.8.8,0,0,1,.986-.143l1.091.63a6.541,6.541,0,0,1,1.419-.821V1.007A.8.8,0,0,1,6.077.224a8.365,8.365,0,0,1,3.847,0,.8.8,0,0,1,.619.783v1.26a6.535,6.535,0,0,1,1.418.821l1.092-.63a.8.8,0,0,1,.986.143,8.3,8.3,0,0,1,1.928,3.338.8.8,0,0,1-.37.922L14.5,7.492a6.57,6.57,0,0,1,0,1.639l1.093.631a.8.8,0,0,1,.37.922,8.3,8.3,0,0,1-1.928,3.337.8.8,0,0,1-.986.144l-1.092-.63a6.5,6.5,0,0,1-1.418.82v1.261a.806.806,0,0,1-.619.783,8.39,8.39,0,0,1-3.847,0Z" fill="#8d8d8d"/>
+                                      </svg>  
+                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- filter-area END -->
+
+        <main> 
+            <!-- Assignments Cards Start --> 
+            <section class="Assignments_Cards">
+                <div class="container container_ac">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sorted_card">
+                                <div class="sorted_name">
+                                    <p>Sorted by:</p>
+                                    <select class="select_card">
+                                        <option data-display="Name">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                      </select>
+                                </div>
+                                <div class="sorted_other">
+                                    <p>=</p>
+                                    <img src="assets/img/icon-cards.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="all-cons"> 
+                        <div class="single-conts active" data-cont="All">  
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xl-3">
+                                    <div class="singel_assing_card">
+                                        <span class="three_dot">...</span>
+                                        <h2>Title example with very long name..</h2>
+                                        <p class="assing_card_date"><img src="assets/img/calendar.png" alt=""> Erstellt am: 01.01.2020 / 18:00 Uhr</p>
+                                        <span class="assing_card_parsion"><img src="assets/img/atom-avatar-bg.png" alt=""> Olivia-Sophie Meier</span>
+                                        <div class="bbtung">
+                                            <p>In Bearbeitung <span>50%</span></p>
+                                            <div class="bb_color">
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                                <div class="sp_color empty_color"></div>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_priceing">
+                                            <div class="assing_card_price">
+                                                <h4>200,00 €</h4>
+                                                <small>inkl. 19% MwSt.</small>
+                                            </div>
+                                            <div class="assing_card_price">
+                                                <h4>162,00 €</h4>
+                                                <small>exkl. 19% MwSt.</small>
+                                            </div>
+                                        </div>
+                                        <div class="singel_assing_card_bottom">
+                                            <p><img src="assets/img/file-alt.png" alt=""> Rechnung:  <span>Auftragesname-with-very-long-name</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="assing_card_btn">
+                                        <a href="#">Load more (8 / 201)</a>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="single-conts" data-cont="Open">  </div>
+                        <div class="single-conts" data-cont="Finished">  </div>
+                    </div>
+                </div>
+            </section> 
+            <!-- Assignments Cards End --> 
+        </main> 
+
+        <!-- Footer-area START -->
+        <div class="footer-area assing_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-contents sec assing_footer_content">
+                            <div class="deadlines">
+                                <h4>Bonus Line <span>Salary Opportunuties</span></h4>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                            <p class="month">0 %</p> 
+                            <div class="progr">
+                                <div class="prleft">
+                                    <span>70% achieved</span>
+                                </div>
+                                <span class="prleft_left">only 30% left</span>
+                            </div>
+                            <p class="month assing">100 %</p> 
+                            <div class="deadlines rtd">
+                                  <h4> Choose Activity</h4>
+                                <i class="fal fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-area END -->
+
+            
+		<!-- JS here --> 
+        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/jquery.nice-select.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script> 
+            $('.select_card').niceSelect();
+        </script>
+    </body>
+</html>
