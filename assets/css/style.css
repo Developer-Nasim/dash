@@ -9,6 +9,10 @@ body {
   padding-top: 70px;
   padding-bottom: 0;
  }
+ 
+ body.scNone::-webkit-scrollbar{
+  display: none;
+}
 img{
   max-width: 100%;
 }
@@ -2184,6 +2188,7 @@ section.Assignments_Cards {
     border-radius: 5px;
     box-shadow: 0 0 10px #0000000f;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .singel_assing_card p.assing_card_date{
@@ -2691,7 +2696,8 @@ a.ass_pro_last_af {
     height: 2px;
     background: var(--bac);
     opacity: 0;
-    transition: .4s;
+    transition: .4s; 
+    z-index: 3;
 }
 .assing_parson_nav_tab ul li a:hover:after{
   opacity: 1;
@@ -3110,7 +3116,7 @@ img.position.fm_crl {
 
 
 
-main.Assignments_tbl section.assing_admin {
+section.assing_admin {
   position: fixed;
   top: 0;
   width: 100%;
@@ -3123,7 +3129,7 @@ main.Assignments_tbl section.assing_admin {
   opacity: 0;
   transition: .4s; 
 }
-main.Assignments_tbl section.assing_admin::after {
+section.assing_admin::after {
   content: "";
   position: fixed;
   width: 95%;
@@ -3154,7 +3160,9 @@ main.Assignments_tbl {
 
 /* Assignments  ================== */
 
-
+div#example_filter{
+  display: none;
+}
 div#example_paginate a#example_previous {
   padding: 0;
   background: none;
