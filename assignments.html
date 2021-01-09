@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/datatables.min.css"/>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-
+ 
     </head>
     <body style="background-color: white;">
 
@@ -183,7 +183,7 @@
         <!-- header-area END -->
          
         <!-- filter-area START -->
-        <div class="filter-area">
+        <div class="filter-area" style="z-index: 6;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -240,7 +240,7 @@
 
         <main class="Assignments_tbl"> 
             <!-- Assignments Cards Start --> 
-            <section class="Assignments_Cards" style="background: #fff;">
+            <section class="Assignments_Cards msn" style="background: #fff;padding-bottom: 0;border-bottom: 150px solid #FBFBFB;">
                 <div class="container"> 
                     <div class="all-cons"> 
                         <div class="single-conts active" data-cont="All">  
@@ -256,12 +256,12 @@
                                                             <i class="far fa-chevron-down"></i>
                                                         </div>
                                                     </th>
-                                                    <th>Assignments  <i class="far fa-chevron-down oth"></i> </th>
-                                                    <th>Clients</th>
-                                                    <th>Deadlines</th>
-                                                    <th>Status</th>
-                                                    <th>Invoices</th>
-                                                    <th>Incomes</th>
+                                                    <th>Assignments <i class="far fa-chevron-down oth"></i> </th>
+                                                    <th>Clients  <i class="far fa-chevron-down oth"></i> </th>
+                                                    <th>Deadlines  <i class="far fa-chevron-down oth"></i> </th>
+                                                    <th>Status  <i class="far fa-chevron-down oth"></i> </th>
+                                                    <th>Invoices  <i class="far fa-chevron-down oth"></i> </th>
+                                                    <th>Incomes  <i class="far fa-chevron-down oth"></i> </th>
                                                     <th>
                                                         <div class="th_icon">
                                                             <a href="#"><img src="assets/img/icon-list.png" alt=""></a>
@@ -1952,6 +1952,7 @@
                 </div>
             </section> 
 
+            <!-- sode-bar -->
             <section class="assing_admin ass_side">
                 <div class="container container_ass">
                     <div class="row">
@@ -1960,7 +1961,7 @@
                         </div>
                         <div class="col-lg-9 col-xl-7 col-md-12 ass-right-side" style="background: #fff;">
                             <div class="row">
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4" style="color: #FCFCFC;">
                                     <div class="parson_left_nav_ov"></div>
                                     <div class="assing_singel_parson_left parson_left_nav">
                                         <div class="toggel_nav">
@@ -2341,31 +2342,35 @@
         <script src="assets/js/main.js"></script>
         <script>
 
-            var fslc = document.querySelector('.check_tb input');
-            var allslc = document.querySelectorAll('.tb_list input');
-            var asAll= document.querySelector('.assing_admin.ass_side');
-            var clSd = document.querySelector('.assing_admin.ass_side .nav_cont_title_right');
-            var asSh = document.querySelector('.container.container_ass .ass_side_left');
+            var bdy     = document.querySelector('body');
+            var fslc    = document.querySelector('.check_tb input');
+            var allslc  = document.querySelectorAll('.tb_list input');
+            var asAll   = document.querySelector('.assing_admin.ass_side');
+            var clSd    = document.querySelector('.assing_admin.ass_side .nav_cont_title_right');
+            var asSh    = document.querySelector('.container.container_ass .ass_side_left');
 
             $(document).ready(function() { 
                 $('#example').DataTable();
                 $('.select_card').niceSelect();
 
-                $(".ass_tb").click(function(){
+                $(".tb_list tr td").click(function(){
                     $(".assing_admin").addClass("visseb");
+                    $("body").addClass("scNone");
                 });
-                $(".viss_re").click(function(){
-                    $(".assing_admin").removeClass("visseb");
-                });
-                
             });
 
             asSh.addEventListener('click', () => {
+                bdy.classList.remove('scNone');
                 asAll.classList.remove('visseb');
             })
             clSd.addEventListener('click', () => {
+                bdy.classList.remove('scNone');
                 asAll.classList.remove('visseb');
-            }) 
+            })
+
+
+
+
              
             fslc.addEventListener('click', ns)
             function ns() {
